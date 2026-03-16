@@ -1,3 +1,59 @@
+# 🌮 Sofia's Mexican Food — Website
+
+**Live website → [https://73-maker.github.io/SofiasMexicanFood/](https://73-maker.github.io/SofiasMexicanFood/)**
+
+Authentic Mexican restaurant website for **Sofia's Mexican Food**, Osoyoos BC.  
+Rated ⭐ 4.7 / 5 from 574 Google reviews · 📍 9910 Crowsnest Hwy · 📞 (250) 689-5600
+
+---
+
+## 🚀 How to Publish Your Website (3 easy steps)
+
+The website is a single `index.html` file at the root of this repo.  
+It publishes automatically to **GitHub Pages** — a free hosting service built into GitHub.
+
+### Step 1 — Merge this Pull Request
+
+Go to the **Pull Requests** tab and merge this PR into `main`.  
+This copies all the website files (including the GitHub Actions workflow) into the main branch.
+
+### Step 2 — Enable GitHub Pages in Settings
+
+1. In your repository, click **Settings** (top menu)
+2. Click **Pages** in the left sidebar
+3. Under **Build and deployment → Source**, select **GitHub Actions**
+4. Click **Save**
+
+That's it! GitHub will automatically run the deployment.
+
+### Step 3 — Visit your live website
+
+After ~1 minute your site will be live at:
+
+> **[https://73-maker.github.io/SofiasMexicanFood/](https://73-maker.github.io/SofiasMexicanFood/)**
+
+Every time you push a change to `main`, the site automatically re-deploys (usually within 1–2 minutes). You can also trigger a manual deploy from the **Actions** tab → **Deploy to GitHub Pages** → **Run workflow**.
+
+---
+
+## 📁 Website Files
+
+| File | Purpose |
+|------|---------|
+| `index.html` | Complete website (hero, menu, gallery, reviews, map) |
+| `assets/hero-tacos.svg` | Fish tacos illustration |
+| `assets/burrito.svg` | Burrito illustration |
+| `assets/enchiladas.svg` | Enchiladas illustration |
+| `assets/quesadilla.svg` | Quesadillas illustration |
+| `assets/taquitos.svg` | Taquitos & Flautas illustration |
+| `assets/salad.svg` | Salad illustration |
+| `assets/soup.svg` | Soup illustration |
+| `.github/workflows/deploy.yml` | Auto-deploy workflow |
+
+> **Adding your own photos:** Upload your food photos to the `assets/` folder (JPG or PNG), then update the `src` attributes in `index.html` to point to your new image files.
+
+---
+
 # Git Integration & Wix CLI <img align="left" src="https://user-images.githubusercontent.com/89579857/185785022-cab37bf5-26be-4f11-85f0-1fac63c07d3b.png">
 
 This repo is part of Git Integration & Wix CLI, a set of tools that allows you to write, test, and publish code for your Wix site locally on your computer. 

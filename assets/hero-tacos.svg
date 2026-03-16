@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <radialGradient id="plateBg" cx="50%" cy="60%" r="70%">
+      <stop offset="0%" stop-color="#FF8C00"/>
+      <stop offset="40%" stop-color="#E65100"/>
+      <stop offset="100%" stop-color="#BF360C"/>
+    </radialGradient>
+    <radialGradient id="plateWhite" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F5F5F5"/>
+    </radialGradient>
+    <radialGradient id="tableGrad" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#5D4037"/>
+      <stop offset="100%" stop-color="#3E2723"/>
+    </radialGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-opacity="0.35"/></filter>
+    <filter id="softShadow"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.25"/></filter>
+  </defs>
+  <!-- Table surface -->
+  <rect width="800" height="500" fill="url(#tableGrad)"/>
+  <!-- Wood grain lines -->
+  <line x1="0" y1="80" x2="800" y2="100" stroke="rgba(255,255,255,0.04)" stroke-width="12"/>
+  <line x1="0" y1="200" x2="800" y2="220" stroke="rgba(255,255,255,0.03)" stroke-width="8"/>
+  <line x1="0" y1="340" x2="800" y2="360" stroke="rgba(255,255,255,0.03)" stroke-width="10"/>
+  <!-- Mexican tile decoration subtle -->
+  <rect x="0" y="0" width="800" height="500" fill="url(#plateBg)" opacity="0.18"/>
+
+  <!-- Orange-rimmed plate (matching actual restaurant plate from photos) -->
+  <ellipse cx="400" cy="290" rx="300" ry="175" fill="#E65100" filter="url(#shadow)"/>
+  <ellipse cx="400" cy="285" rx="285" ry="165" fill="url(#plateWhite)"/>
+  <ellipse cx="400" cy="283" rx="258" ry="148" fill="#FAFAFA"/>
+
+  <!-- TACO 1 — Fish taco (left) -->
+  <g transform="translate(175,175)">
+    <!-- Shell -->
+    <path d="M0,95 Q45,-25 90,95" fill="#F9A825" stroke="#E65100" stroke-width="2.5"/>
+    <path d="M5,93 Q45,-12 85,93" fill="#FFCA28" opacity="0.6"/>
+    <!-- Crispy texture lines on shell -->
+    <path d="M20,70 Q45,40 70,70" stroke="#E65100" stroke-width="1.2" fill="none" opacity="0.5"/>
+    <path d="M15,82 Q45,55 75,82" stroke="#E65100" stroke-width="1" fill="none" opacity="0.4"/>
+    <!-- Cabbage/lettuce base -->
+    <ellipse cx="45" cy="78" rx="38" ry="16" fill="#81C784"/>
+    <path d="M12,76 Q30,65 45,72 Q60,65 78,76" fill="#A5D6A7" opacity="0.8"/>
+    <!-- Fish piece -->
+    <rect x="18" y="60" width="54" height="18" rx="9" fill="#FFECB3"/>
+    <rect x="20" y="62" width="50" height="14" rx="7" fill="#FFF8E1"/>
+    <!-- Crispy batter texture -->
+    <circle cx="30" cy="68" r="4" fill="#FFD54F" opacity="0.7"/>
+    <circle cx="42" cy="65" r="3" fill="#FFD54F" opacity="0.6"/>
+    <circle cx="55" cy="68" r="4" fill="#FFCA28" opacity="0.7"/>
+    <circle cx="65" cy="65" r="3" fill="#FFD54F" opacity="0.5"/>
+    <!-- Red salsa -->
+    <path d="M22,58 Q35,50 50,56 Q62,50 70,57" stroke="#EF5350" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.9"/>
+    <!-- Sour cream -->
+    <path d="M28,55 Q45,47 62,54" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round" opacity="0.9"/>
+    <!-- Pico - tomato, onion bits -->
+    <circle cx="34" cy="52" r="5" fill="#EF5350"/>
+    <circle cx="54" cy="50" r="4.5" fill="#EF5350"/>
+    <circle cx="44" cy="48" r="4" fill="#FFEB3B" opacity="0.9"/>
+    <!-- Cilantro -->
+    <circle cx="38" cy="46" r="3.5" fill="#4CAF50"/>
+    <circle cx="50" cy="44" r="3" fill="#66BB6A"/>
+    <circle cx="60" cy="47" r="3" fill="#4CAF50"/>
+  </g>
+
+  <!-- TACO 2 — Chicken taco (middle) -->
+  <g transform="translate(310,160)">
+    <path d="M0,100 Q48,-28 96,100" fill="#FFB300" stroke="#E65100" stroke-width="2.5"/>
+    <path d="M5,98 Q48,-15 91,98" fill="#FFCA28" opacity="0.55"/>
+    <!-- texture -->
+    <path d="M18,74 Q48,42 78,74" stroke="#E65100" stroke-width="1.2" fill="none" opacity="0.4"/>
+    <!-- Shredded lettuce -->
+    <ellipse cx="48" cy="82" rx="40" ry="17" fill="#66BB6A"/>
+    <path d="M12,80 Q30,68 48,75 Q66,68 84,80" fill="#A5D6A7" opacity="0.7"/>
+    <!-- Chicken strips -->
+    <rect x="16" y="62" width="64" height="20" rx="10" fill="#FFCC80"/>
+    <rect x="18" y="64" width="60" height="16" rx="8" fill="#FFAA00" opacity="0.5"/>
+    <!-- Grill marks -->
+    <line x1="24" y1="65" x2="24" y2="77" stroke="#BF360C" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="34" y1="65" x2="34" y2="77" stroke="#BF360C" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="44" y1="65" x2="44" y2="77" stroke="#BF360C" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="54" y1="65" x2="54" y2="77" stroke="#BF360C" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="64" y1="65" x2="64" y2="77" stroke="#BF360C" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <!-- Cheese -->
+    <path d="M18,60 Q38,52 58,58 Q72,52 80,60" stroke="#FFD600" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <!-- Tomato salsa -->
+    <path d="M22,56 Q48,46 74,56" stroke="#EF5350" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.9"/>
+    <circle cx="32" cy="52" r="5" fill="#EF5350"/>
+    <circle cx="48" cy="49" r="5" fill="#EF5350"/>
+    <circle cx="64" cy="52" r="4.5" fill="#EF5350"/>
+    <!-- Sour cream drizzle -->
+    <path d="M26,53 Q48,44 70,52" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.85"/>
+  </g>
+
+  <!-- TACO 3 — Beef taco (right) -->
+  <g transform="translate(455,170)">
+    <path d="M0,96 Q46,-26 92,96" fill="#F9A825" stroke="#E65100" stroke-width="2.5"/>
+    <path d="M5,94 Q46,-13 87,94" fill="#FFCA28" opacity="0.5"/>
+    <path d="M16,70 Q46,40 76,70" stroke="#E65100" stroke-width="1.2" fill="none" opacity="0.4"/>
+    <!-- Shredded beef -->
+    <ellipse cx="46" cy="80" rx="38" ry="15" fill="#8D4E2A"/>
+    <path d="M14,78 Q28,68 46,73 Q64,68 78,78" fill="#A0522D" opacity="0.7"/>
+    <!-- Beef shreds texture -->
+    <path d="M18,76 Q30,70 42,75" stroke="#5D2E0C" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M30,72 Q46,66 60,72" stroke="#5D2E0C" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M44,76 Q56,70 70,76" stroke="#5D2E0C" stroke-width="2" fill="none" opacity="0.5"/>
+    <!-- Lettuce on top -->
+    <path d="M12,72 Q30,60 46,68 Q62,60 80,72" fill="#81C784" opacity="0.8"/>
+    <!-- Cheese -->
+    <path d="M16,60 Q46,50 76,60" stroke="#FFD600" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <!-- Red tomato -->
+    <circle cx="26" cy="56" r="6" fill="#EF5350"/>
+    <circle cx="46" cy="53" r="6" fill="#EF5350"/>
+    <circle cx="66" cy="56" r="5.5" fill="#EF5350"/>
+    <!-- Sour cream -->
+    <path d="M22,57 Q46,48 70,57" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round" opacity="0.9"/>
+    <!-- Jalapeño slices -->
+    <ellipse cx="36" cy="50" rx="7" ry="5" fill="#66BB6A"/>
+    <ellipse cx="56" cy="48" rx="6" ry="4.5" fill="#4CAF50"/>
+  </g>
+
+  <!-- Salsa bowl (centre bottom of plate) -->
+  <ellipse cx="400" cy="395" rx="52" ry="26" fill="#BF360C" opacity="0.9"/>
+  <ellipse cx="400" cy="390" rx="48" ry="22" fill="#D32F2F"/>
+  <ellipse cx="400" cy="387" rx="42" ry="18" fill="#EF5350"/>
+  <!-- Salsa surface -->
+  <circle cx="388" cy="385" r="5" fill="#FFCDD2" opacity="0.5"/>
+  <circle cx="408" cy="383" r="4" fill="#FFCDD2" opacity="0.4"/>
+
+  <!-- Lime wedges -->
+  <g transform="translate(250,370)">
+    <path d="M0,0 L32,0 Q38,18 22,28 Q6,18 0,0Z" fill="#C5E1A5"/>
+    <path d="M3,8 L29,8" stroke="#8BC34A" stroke-width="1.5" fill="none"/>
+    <path d="M6,16 L26,16" stroke="#8BC34A" stroke-width="1.5" fill="none"/>
+    <circle cx="16" cy="0" r="3" fill="#F9A825"/>
+  </g>
+  <g transform="translate(510,375)">
+    <path d="M0,0 L30,0 Q36,16 20,26 Q4,16 0,0Z" fill="#C5E1A5"/>
+    <path d="M3,7 L27,7" stroke="#8BC34A" stroke-width="1.5" fill="none"/>
+    <path d="M5,14 L25,14" stroke="#8BC34A" stroke-width="1.5" fill="none"/>
+    <circle cx="15" cy="0" r="2.5" fill="#F9A825"/>
+  </g>
+
+  <!-- Guacamole side -->
+  <ellipse cx="175" cy="390" rx="48" ry="24" fill="#388E3C"/>
+  <ellipse cx="175" cy="386" rx="44" ry="20" fill="#43A047"/>
+  <ellipse cx="175" cy="384" rx="38" ry="17" fill="#66BB6A" opacity="0.8"/>
+
+  <!-- Rating & title -->
+  <text x="400" y="42" text-anchor="middle" font-family="'Poppins',Arial,sans-serif" font-size="26" fill="#FFD600" letter-spacing="4">★★★★★</text>
+  <text x="400" y="72" text-anchor="middle" font-family="'Poppins',Arial,sans-serif" font-size="15" fill="rgba(255,255,255,0.9)" font-weight="700" letter-spacing="1">SOFIA'S FISH TACOS — OSOYOOS, BC</text>
+</svg>

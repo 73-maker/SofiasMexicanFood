@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <radialGradient id="tableB" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#4E342E"/>
+      <stop offset="100%" stop-color="#3E2723"/>
+    </radialGradient>
+    <radialGradient id="plateW2" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F5F5F5"/>
+    </radialGradient>
+    <filter id="sh2"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity="0.4"/></filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#tableB)"/>
+  <line x1="0" y1="100" x2="800" y2="115" stroke="rgba(255,255,255,0.03)" stroke-width="14"/>
+  <line x1="0" y1="280" x2="800" y2="295" stroke="rgba(255,255,255,0.025)" stroke-width="10"/>
+
+  <!-- Orange-rimmed plate -->
+  <ellipse cx="400" cy="295" rx="310" ry="180" fill="#E65100" filter="url(#sh2)"/>
+  <ellipse cx="400" cy="290" rx="296" ry="170" fill="url(#plateW2)"/>
+  <ellipse cx="400" cy="288" rx="270" ry="155" fill="#FAFAFA"/>
+
+  <!-- BURRITO body — large, sitting on plate -->
+  <ellipse cx="400" cy="258" rx="220" ry="68" fill="#8D4E2A"/>
+  <rect x="180" y="196" width="440" height="126" rx="63" ry="63" fill="#F9A825"/>
+  <rect x="185" y="201" width="430" height="116" rx="58" ry="58" fill="#FFB300"/>
+  <!-- Tortilla fold lines - authentic look -->
+  <path d="M185,218 Q260,208 340,216 Q400,222 460,216 Q540,208 615,218" stroke="#E65100" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M185,300 Q260,310 340,302 Q400,296 460,302 Q540,310 615,300" stroke="#E65100" stroke-width="2" fill="none" opacity="0.5"/>
+  <!-- Burrito end caps -->
+  <ellipse cx="180" cy="258" rx="40" ry="68" fill="#E65100"/>
+  <ellipse cx="620" cy="258" rx="40" ry="68" fill="#E65100"/>
+  <!-- Slight warm gradient overlay on body -->
+  <rect x="185" y="201" width="430" height="116" rx="58" ry="58" fill="url(#tableB)" opacity="0.08"/>
+  <!-- Filling peek through top fold -->
+  <ellipse cx="400" cy="218" rx="160" ry="22" fill="#A0522D" opacity="0.6"/>
+  <!-- Visible ingredients at fold -->
+  <ellipse cx="340" cy="215" rx="22" ry="10" fill="#81C784" opacity="0.9"/>
+  <ellipse cx="380" cy="212" rx="20" ry="9" fill="#EF5350" opacity="0.85"/>
+  <ellipse cx="416" cy="215" rx="22" ry="10" fill="#FFD600" opacity="0.85"/>
+  <ellipse cx="456" cy="214" rx="18" ry="9" fill="#795548" opacity="0.8"/>
+
+  <!-- Burrito cut in half — revealing filling at right side -->
+  <ellipse cx="540" cy="258" rx="38" ry="60" fill="#5D2E0C"/>
+  <!-- Cut face - rice, beans, chicken visible -->
+  <ellipse cx="540" cy="258" rx="34" ry="56" fill="#8D4E2A"/>
+  <!-- Rice layer -->
+  <ellipse cx="540" cy="278" rx="28" ry="15" fill="#FFF8E1"/>
+  <circle cx="530" cy="276" r="3.5" fill="#FFCC02"/>
+  <circle cx="540" cy="273" r="3.5" fill="#FFCC02"/>
+  <circle cx="550" cy="276" r="3.5" fill="#FFCC02"/>
+  <circle cx="534" cy="282" r="3" fill="#FFCC02"/>
+  <circle cx="546" cy="281" r="3" fill="#FFCC02"/>
+  <!-- Beans -->
+  <ellipse cx="540" cy="250" rx="26" ry="12" fill="#5D4037"/>
+  <ellipse cx="530" cy="248" rx="8" ry="6" fill="#795548"/>
+  <ellipse cx="542" cy="246" rx="8" ry="6" fill="#795548"/>
+  <ellipse cx="552" cy="250" rx="7" ry="5.5" fill="#795548"/>
+  <!-- Chicken/meat -->
+  <ellipse cx="540" cy="238" rx="24" ry="10" fill="#FFCC80"/>
+  <!-- Cheese -->
+  <path d="M516,230 Q540,222 564,230" stroke="#FFD600" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- Sour cream -->
+  <ellipse cx="540" cy="227" rx="20" ry="8" fill="white" opacity="0.9"/>
+
+  <!-- Side: Mexican rice on plate -->
+  <ellipse cx="175" cy="370" rx="68" ry="38" fill="#FFF8E1" stroke="#E0E0E0" stroke-width="2"/>
+  <circle cx="155" cy="365" r="5" fill="#FFCC02"/>
+  <circle cx="168" cy="360" r="5" fill="#FFCC02"/>
+  <circle cx="180" cy="365" r="5" fill="#FFCC02"/>
+  <circle cx="192" cy="360" r="5" fill="#FFCC02"/>
+  <circle cx="162" cy="373" r="5" fill="#FFCC02"/>
+  <circle cx="175" cy="376" r="5" fill="#FFCC02"/>
+  <circle cx="188" cy="373" r="5" fill="#FFCC02"/>
+  <!-- red flecks in rice -->
+  <circle cx="170" cy="368" r="3" fill="#EF5350" opacity="0.6"/>
+  <circle cx="185" cy="364" r="3" fill="#EF5350" opacity="0.6"/>
+
+  <!-- Side: Refried beans on plate -->
+  <ellipse cx="620" cy="370" rx="65" ry="36" fill="#4E342E" stroke="#3E2723" stroke-width="2" opacity="0.9"/>
+  <ellipse cx="620" cy="366" rx="58" ry="30" fill="#5D4037"/>
+  <ellipse cx="608" cy="362" rx="14" ry="10" fill="#795548"/>
+  <ellipse cx="624" cy="358" rx="14" ry="10" fill="#795548"/>
+  <ellipse cx="636" cy="364" rx="13" ry="9" fill="#795548"/>
+  <ellipse cx="616" cy="372" rx="13" ry="9" fill="#795548"/>
+  <!-- Sour cream on beans -->
+  <ellipse cx="620" cy="360" rx="20" ry="10" fill="white" opacity="0.7"/>
+
+  <!-- Sauce drizzle on burrito -->
+  <path d="M240,220 Q290,205 340,215 Q380,222 420,212 Q470,202 520,215" stroke="#BF360C" stroke-width="3.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+  <text x="400" y="42" text-anchor="middle" font-family="'Poppins',Arial,sans-serif" font-size="26" fill="#FFD600" letter-spacing="4">★★★★★</text>
+  <text x="400" y="72" text-anchor="middle" font-family="'Poppins',Arial,sans-serif" font-size="15" fill="rgba(255,255,255,0.9)" font-weight="700" letter-spacing="1">SOFIA'S SIGNATURE BURRITO</text>
+</svg>

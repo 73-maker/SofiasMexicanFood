@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <radialGradient id="tableSo" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#4E342E"/>
+      <stop offset="100%" stop-color="#3E2723"/>
+    </radialGradient>
+    <radialGradient id="bowlGrad" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F5F5F5"/>
+    </radialGradient>
+    <radialGradient id="soupGrad" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FF8F00"/>
+      <stop offset="50%" stop-color="#E65100"/>
+      <stop offset="100%" stop-color="#BF360C"/>
+    </radialGradient>
+    <filter id="shSo"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.45"/></filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#tableSo)"/>
+
+  <!-- Decorative table mat -->
+  <ellipse cx="400" cy="310" rx="360" ry="210" fill="rgba(100,50,10,0.2)"/>
+
+  <!-- Bowl exterior (decorative white bowl with red rim - as in actual photo) -->
+  <ellipse cx="400" cy="330" rx="260" ry="155" fill="#C62828" filter="url(#shSo)"/>
+  <ellipse cx="400" cy="322" rx="250" ry="148" fill="url(#bowlGrad)"/>
+  <!-- Bowl rim detail -->
+  <path d="M152,310 Q180,240 400,220 Q620,240 648,310" fill="none" stroke="#E53935" stroke-width="12" opacity="0.5"/>
+  <ellipse cx="400" cy="318" rx="240" ry="142" fill="#FAFAFA"/>
+  <!-- Bowl concave -->
+  <ellipse cx="400" cy="314" rx="220" ry="132" fill="#FFF8F0"/>
+
+  <!-- Soup liquid -->
+  <ellipse cx="400" cy="312" rx="205" ry="118" fill="url(#soupGrad)" opacity="0.92"/>
+  <!-- Broth surface -->
+  <ellipse cx="400" cy="308" rx="195" ry="110" fill="#F57C00" opacity="0.6"/>
+  <!-- Broth shimmer/surface ripples -->
+  <path d="M220,305 Q280,292 340,302 Q380,310 420,300 Q470,290 520,302 Q560,310 580,305" stroke="#FF8F00" stroke-width="2.5" fill="none" opacity="0.5"/>
+  <path d="M225,318 Q285,306 345,314 Q385,320 425,312 Q470,303 525,314 Q562,320 580,316" stroke="#E65100" stroke-width="2" fill="none" opacity="0.4"/>
+
+  <!-- Ingredients in soup -->
+  <!-- Chicken pieces -->
+  <ellipse cx="310" cy="300" rx="32" ry="18" fill="#FFCC80"/>
+  <ellipse cx="310" cy="298" rx="28" ry="15" fill="#FFB74D"/>
+  <!-- Shred lines -->
+  <path d="M284,298 Q310,292 336,298" stroke="#FF8F00" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M288,304 Q310,298 332,304" stroke="#FF8F00" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <ellipse cx="490" cy="305" rx="28" ry="16" fill="#FFCC80"/>
+  <ellipse cx="490" cy="303" rx="24" ry="13" fill="#FFB74D"/>
+  <path d="M468,303 Q490,297 512,303" stroke="#FF8F00" stroke-width="2" fill="none" opacity="0.6"/>
+
+  <!-- Vegetables: potato chunks -->
+  <rect x="340" y="290" width="30" height="24" rx="8" fill="#FFF59D"/>
+  <rect x="342" y="292" width="26" height="20" rx="6" fill="#FFEE58"/>
+  <rect x="430" y="294" width="28" height="22" rx="7" fill="#FFF9C4"/>
+
+  <!-- Carrot slices -->
+  <ellipse cx="375" cy="315" rx="16" ry="12" fill="#FF9800"/>
+  <path d="M360,312 Q375,306 390,312" stroke="#E65100" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <ellipse cx="450" cy="320" rx="15" ry="11" fill="#FFB74D"/>
+
+  <!-- Zucchini/green veg -->
+  <ellipse cx="340" cy="320" rx="18" ry="12" fill="#66BB6A"/>
+  <ellipse cx="340" cy="318" rx="15" ry="10" fill="#81C784"/>
+  <ellipse cx="510" cy="316" rx="17" ry="11" fill="#66BB6A"/>
+
+  <!-- Tomato pieces -->
+  <ellipse cx="430" cy="296" rx="14" ry="11" fill="#EF5350"/>
+  <ellipse cx="470" cy="320" rx="13" ry="10" fill="#E53935"/>
+
+  <!-- Tortilla strips floating on top -->
+  <rect x="330" y="278" width="70" height="10" rx="5" fill="#F9A825" transform="rotate(-18,365,283)"/>
+  <rect x="410" y="274" width="65" height="10" rx="5" fill="#FFB300" transform="rotate(12,442,279)"/>
+  <rect x="355" y="270" width="55" height="10" rx="5" fill="#F9A825" transform="rotate(-5,382,275)"/>
+
+  <!-- Cilantro on top -->
+  <circle cx="372" cy="274" r="9" fill="#4CAF50"/>
+  <circle cx="386" cy="270" r="8" fill="#66BB6A"/>
+  <circle cx="362" cy="268" r="7" fill="#388E3C"/>
+  <circle cx="420" cy="272" r="9" fill="#4CAF50"/>
+  <circle cx="432" cy="268" r="7" fill="#66BB6A"/>
+
+  <!-- Avocado slice on rim -->
+  <ellipse cx="500" cy="290" rx="22" ry="14" fill="#8BC34A"/>
+  <ellipse cx="500" cy="290" rx="16" ry="10" fill="#558B2F"/>
+  <circle cx="500" cy="290" r="5.5" fill="#6D4C41"/>
+
+  <!-- Steam wisps -->
+  <path d="M340,210 Q348,195 342,178 Q336,162 344,148" stroke="rgba(220,200,180,0.45)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M400,205 Q408,190 402,173 Q396,157 404,143" stroke="rgba(220,200,180,0.4)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M460,208 Q468,193 462,176 Q456,160 464,146" stroke="rgba(220,200,180,0.4)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Lime wedge on rim -->
+  <g transform="translate(196,248)">
+    <path d="M0,0 L30,0 Q37,17 22,27 Q7,17 0,0Z" fill="#C5E1A5"/>
+    <path d="M3,8 L27,8" stroke="#8BC34A" stroke-width="1.5" fill="none"/>
+    <circle cx="15" cy="0" r="3.5" fill="#F9A825"/>
+  </g>
+
+  <text x="400" y="42" text-anchor="middle" font-family="'Poppins',Arial,sans-serif" font-size="26" fill="#FF9800" letter-spacing="4">★★★★★</text>
+  <text x="400" y="72" text-anchor="middle" font-family="'Poppins',Arial,sans-serif" font-size="15" fill="rgba(255,255,255,0.9)" font-weight="700" letter-spacing="1">SOPA DE POLLO — SOFIA'S MEXICAN FOOD</text>
+</svg>
