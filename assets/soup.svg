@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <radialGradient id="bg7" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#fbe9e7"/>
+      <stop offset="100%" stop-color="#ffccbc"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg7)"/>
+  <!-- Bowl -->
+  <ellipse cx="300" cy="260" rx="190" ry="100" fill="#fff8e1" stroke="#e0e0e0" stroke-width="3"/>
+  <path d="M110,260 Q130,340 300,360 Q470,340 490,260" fill="#fff8e1" stroke="#e0e0e0" stroke-width="2"/>
+  <!-- Soup -->
+  <ellipse cx="300" cy="260" rx="180" ry="92" fill="#ff8f00" opacity="0.7"/>
+  <ellipse cx="300" cy="258" rx="175" ry="88" fill="#f57f17" opacity="0.6"/>
+  <!-- Broth surface ripples -->
+  <path d="M160,255 Q210,245 260,255 Q300,262 340,252 Q390,242 430,255" stroke="#ff6f00" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M155,268 Q200,258 250,265 Q295,272 340,263 Q390,252 440,265" stroke="#ff6f00" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <!-- Vegetables in soup -->
+  <circle cx="230" cy="255" r="18" fill="#66bb6a"/>
+  <circle cx="255" cy="248" r="15" fill="#81c784"/>
+  <!-- Corn -->
+  <circle cx="310" cy="258" r="17" fill="#ffd600"/>
+  <circle cx="305" cy="253" r="14" fill="#ffeb3b"/>
+  <!-- Tomatoes -->
+  <circle cx="375" cy="252" r="16" fill="#e53935"/>
+  <circle cx="370" cy="248" r="13" fill="#ef5350"/>
+  <!-- Chicken shreds -->
+  <path d="M260,270 Q280,260 310,268 Q330,274 350,265" stroke="white" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M265,278 Q285,268 310,275" stroke="#f5f5f5" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <!-- Tortilla strips on top -->
+  <rect x="240" y="230" width="60" height="8" rx="4" fill="#f9a825" transform="rotate(-15,270,234)"/>
+  <rect x="270" y="225" width="55" height="8" rx="4" fill="#ffb300" transform="rotate(10,297,229)"/>
+  <rect x="310" y="235" width="50" height="8" rx="4" fill="#f9a825" transform="rotate(-8,335,239)"/>
+  <!-- Lime wedge -->
+  <path d="M380,310 L408,310 Q415,323 400,332 Q385,323 380,310Z" fill="#aed581"/>
+  <path d="M382,315 L406,315" stroke="#8bc34a" stroke-width="1.5" fill="none"/>
+  <!-- Steam wisps -->
+  <path d="M250,185 Q255,170 250,155 Q245,140 250,125" stroke="#bdbdbd" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <path d="M300,180 Q305,165 300,150 Q295,135 300,120" stroke="#bdbdbd" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <path d="M350,185 Q355,170 350,155 Q345,140 350,125" stroke="#bdbdbd" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <!-- Title -->
+  <text x="300" y="52" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#ff9800">★★★★★</text>
+  <text x="300" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#795548" font-weight="bold">Sopa (Mexican Soup)</text>
+</svg>

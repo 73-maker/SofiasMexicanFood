@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sofia's Mexican Food | Authentic Mexican Restaurant in Osoyoos, BC</title>
+  <meta name="description" content="Sofia's Mexican Food in Osoyoos, BC — authentic tacos, burritos, enchiladas, quesadillas, and more. Located at 9910 Crowsnest Hwy inside Osoyoos Fruit Basket. Rated 4.7 ★ by 574 guests." />
+  <meta name="keywords" content="Sofia's Mexican Food, Mexican restaurant Osoyoos, tacos Osoyoos, burritos Osoyoos, authentic Mexican food Osoyoos, best tacos Osoyoos BC" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Sofia's Mexican Food | Osoyoos, BC" />
+  <meta property="og:description" content="Authentic Mexican food in Osoyoos, BC. Tacos, burritos, enchiladas, and more made with fresh ingredients and bold flavors." />
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:url" content="https://73-maker.github.io/SofiasMexicanFood/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sofia's Mexican Food | Osoyoos, BC" />
+  <meta name="twitter:description" content="Authentic Mexican food in Osoyoos, BC — tacos, burritos, enchiladas &amp; more." />
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Sofia's Mexican Food",
+    "description": "Authentic Mexican restaurant serving tacos, burritos, enchiladas, quesadillas, and more in Osoyoos, BC.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9910 Crowsnest Hwy",
+      "addressLocality": "Osoyoos",
+      "addressRegion": "BC",
+      "postalCode": "V0H 1V2",
+      "addressCountry": "CA"
+    },
+    "telephone": "+1-250-689-5600",
+    "servesCuisine": "Mexican",
+    "priceRange": "$10–$20",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "574"
+    },
+    "url": "https://73-maker.github.io/SofiasMexicanFood/",
+    "hasMap": "https://maps.app.goo.gl/2axbKxR4ixwWfeVJ9"
+  }
+  </script>
+  <style>
+    /* ── Reset & Variables ── */
+    :root {
+      --red:       #C41C3B;
+      --red-dark:  #9b1530;
+      --orange:    #F57C00;
+      --orange-lt: #FF9800;
+      --teal:      #00897B;
+      --teal-lt:   #00BCD4;
+      --cream:     #FFF8F0;
+      --surface:   #FFFFFF;
+      --surface2:  #FFF1DE;
+      --text:      #1A0A00;
+      --muted:     #6B4F3A;
+      --border:    rgba(100,50,20,0.1);
+      --shadow:    0 8px 32px rgba(100,40,0,0.12);
+      --radius:    16px;
+      --max:       1160px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; height: auto; display: block; }
+
+    /* ── Utility ── */
+    .container { width: min(100% - 2rem, var(--max)); margin: 0 auto; }
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 0.5rem;
+    }
+    .section-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+      flex-wrap: wrap;
+    }
+    .section-head p { max-width: 420px; color: var(--muted); }
+
+    /* ── Buttons ── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.7rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: var(--red);
+      color: white;
+    }
+    .btn-primary:hover { background: var(--red-dark); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(196,28,59,0.35); }
+    .btn-secondary {
+      background: transparent;
+      border-color: var(--red);
+      color: var(--red);
+    }
+    .btn-secondary:hover { background: var(--red); color: white; transform: translateY(-2px); }
+    .btn-teal {
+      background: var(--teal);
+      color: white;
+    }
+    .btn-teal:hover { background: #00695c; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,137,123,0.35); }
+    .btn-lg { padding: 0.85rem 2rem; font-size: 1.05rem; }
+
+    /* ── Navigation ── */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 248, 240, 0.95);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 2px 12px rgba(100,40,0,0.06);
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.85rem 0;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: 0.01em;
+      color: var(--text);
+    }
+    .brand-icon {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--red), var(--orange));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      box-shadow: 0 3px 10px rgba(196,28,59,0.3);
+      flex-shrink: 0;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+    }
+    .nav-links a {
+      padding: 0.45rem 0.85rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--muted);
+      transition: all 0.15s;
+    }
+    .nav-links a:hover { color: var(--red); background: rgba(196,28,59,0.07); }
+    .nav-call {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2.5px;
+      background: var(--text);
+      border-radius: 3px;
+      transition: all 0.25s;
+    }
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      gap: 0;
+      padding: 0.5rem 0 1rem;
+      border-top: 1px solid var(--border);
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      padding: 0.75rem 0;
+      font-weight: 600;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+    }
+    .mobile-menu a:last-child { border-bottom: none; }
+
+    /* ── Hero ── */
+    .hero {
+      padding: 5rem 0 4rem;
+      overflow: hidden;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(245,124,0,0.12), transparent 65%);
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -80px;
+      left: -80px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(196,28,59,0.08), transparent 65%);
+      pointer-events: none;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 3.5rem;
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 1.1rem;
+      letter-spacing: -0.02em;
+    }
+    .hero h1 span { color: var(--red); }
+    .hero p {
+      font-size: 1.08rem;
+      color: var(--muted);
+      max-width: 480px;
+      margin-bottom: 2rem;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+    .rating-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      padding: 0.5rem 1.1rem;
+      font-size: 0.9rem;
+      box-shadow: var(--shadow);
+    }
+    .rating-badge .stars { color: var(--orange-lt); font-size: 1rem; letter-spacing: 1px; }
+    .rating-badge strong { font-weight: 800; }
+    .hero-visual {
+      position: relative;
+    }
+    .hero-img-wrap {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 24px 64px rgba(100,40,0,0.18);
+      background: var(--surface2);
+      aspect-ratio: 4/3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-badge {
+      position: absolute;
+      bottom: -18px;
+      left: -18px;
+      background: white;
+      border-radius: 14px;
+      padding: 0.85rem 1.1rem;
+      box-shadow: 0 8px 30px rgba(100,40,0,0.15);
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-size: 0.88rem;
+    }
+    .hero-badge .badge-icon {
+      width: 38px;
+      height: 38px;
+      background: linear-gradient(135deg, var(--orange-lt), var(--orange));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .hero-badge strong { display: block; font-weight: 700; font-size: 0.92rem; }
+    .hero-badge span { color: var(--muted); font-size: 0.8rem; }
+
+    /* ── Section Styles ── */
+    section { padding: 5rem 0; }
+    h2 {
+      font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 0.6rem;
+    }
+    h3 { font-size: 1.35rem; font-weight: 700; margin-bottom: 0.5rem; }
+
+    /* ── Menu ── */
+    .menu-section { background: var(--surface); }
+    .menu-categories {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+    .cat-btn {
+      padding: 0.45rem 1rem;
+      border-radius: 50px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      border: 2px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .cat-btn.active, .cat-btn:hover {
+      background: var(--red);
+      color: white;
+      border-color: var(--red);
+    }
+    .menu-panels > div { display: none; }
+    .menu-panels > div.active { display: grid; }
+    .menu-grid {
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+    .menu-card {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.4rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .menu-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+    .menu-card-icon {
+      font-size: 2.2rem;
+      margin-bottom: 0.85rem;
+    }
+    .menu-card h3 { font-size: 1.08rem; margin-bottom: 0.25rem; }
+    .menu-card p { color: var(--muted); font-size: 0.88rem; margin-bottom: 0.9rem; }
+    .menu-card .price {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--red);
+    }
+    .menu-card .tag {
+      display: inline-block;
+      padding: 0.2rem 0.65rem;
+      border-radius: 50px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-left: 0.4rem;
+    }
+    .tag-vegan { background: #e8f5e9; color: #388e3c; }
+    .tag-popular { background: #fff3e0; color: #e65100; }
+    .tag-spicy { background: #fce4ec; color: #c62828; }
+
+    /* ── About ── */
+    .about-section { background: linear-gradient(135deg, #1a0a00 0%, #3e1f00 100%); color: white; }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .about-section .eyebrow { color: var(--orange-lt); }
+    .about-section h2 { color: white; }
+    .about-section p { color: rgba(255,255,255,0.75); margin-bottom: 1.1rem; font-size: 1.02rem; }
+    .about-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .feature-item {
+      display: flex;
+      gap: 0.65rem;
+      align-items: flex-start;
+    }
+    .feature-icon {
+      font-size: 1.4rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .feature-item strong { display: block; font-size: 0.92rem; color: white; margin-bottom: 0.2rem; }
+    .feature-item span { font-size: 0.82rem; color: rgba(255,255,255,0.6); }
+    .about-img-wrap {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.4);
+      aspect-ratio: 4/3;
+      background: #2a1200;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .about-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+
+    /* ── Gallery ── */
+    .gallery-section { background: var(--cream); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 240px);
+      gap: 1rem;
+    }
+    .gallery-item {
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      background: var(--surface2);
+      box-shadow: 0 4px 16px rgba(100,40,0,0.1);
+    }
+    .gallery-item:first-child {
+      grid-column: span 2;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .gallery-item:hover img { transform: scale(1.05); }
+    .gallery-item .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1.2rem 1rem 0.85rem;
+      background: linear-gradient(transparent, rgba(0,0,0,0.55));
+      color: white;
+      font-weight: 600;
+      font-size: 0.9rem;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .gallery-item:hover .caption { opacity: 1; }
+
+    /* ── Reviews ── */
+    .reviews-section { background: var(--surface2); }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .review-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      box-shadow: 0 4px 20px rgba(100,40,0,0.07);
+      border: 1px solid var(--border);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .review-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .review-stars { color: var(--orange-lt); font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 0.9rem; }
+    .review-card blockquote {
+      font-size: 0.97rem;
+      color: var(--text);
+      line-height: 1.65;
+      margin-bottom: 1.1rem;
+      font-style: italic;
+    }
+    .reviewer {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+    .reviewer-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--red), var(--orange));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+    .reviewer-info strong { display: block; font-size: 0.88rem; }
+    .reviewer-info span { font-size: 0.78rem; color: var(--muted); }
+
+    /* ── Visit Us ── */
+    .visit-section { background: white; }
+    .visit-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    .visit-info h2 { margin-bottom: 1.5rem; }
+    .info-list { list-style: none; margin-bottom: 2rem; }
+    .info-list li {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .info-list li:last-child { border-bottom: none; }
+    .info-icon {
+      font-size: 1.4rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .info-list strong { display: block; font-size: 0.85rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; margin-bottom: 0.2rem; }
+    .info-list a { color: var(--red); font-weight: 600; }
+    .info-list a:hover { text-decoration: underline; }
+    .map-container {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+    .map-container iframe {
+      display: block;
+      width: 100%;
+      height: 380px;
+      border: none;
+    }
+    .map-placeholder {
+      width: 100%;
+      height: 380px;
+      background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      color: #2e7d32;
+      font-weight: 600;
+    }
+    .map-placeholder .map-pin { font-size: 3rem; }
+    .visit-actions { display: flex; gap: 0.85rem; flex-wrap: wrap; margin-top: 1.5rem; }
+
+    /* ── CTA Banner ── */
+    .cta-section {
+      background: linear-gradient(135deg, var(--red) 0%, #8b0000 100%);
+      color: white;
+      padding: 4rem 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-section::before {
+      content: '🌮🌶️🫔';
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      transform: translateY(-50%);
+      font-size: 3rem;
+      opacity: 0.15;
+    }
+    .cta-section::after {
+      content: '🌮🌶️🫔';
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      transform: translateY(-50%) scaleX(-1);
+      font-size: 3rem;
+      opacity: 0.15;
+    }
+    .cta-section h2 { color: white; margin-bottom: 0.75rem; }
+    .cta-section p { color: rgba(255,255,255,0.8); max-width: 520px; margin: 0 auto 2rem; font-size: 1.05rem; }
+    .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-white { background: white; color: var(--red); }
+    .btn-white:hover { background: var(--cream); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
+    .btn-outline-white { background: transparent; border: 2px solid rgba(255,255,255,0.5); color: white; }
+    .btn-outline-white:hover { background: rgba(255,255,255,0.15); transform: translateY(-2px); }
+
+    /* ── Footer ── */
+    footer {
+      background: #1a0a00;
+      color: rgba(255,255,255,0.75);
+      padding: 3.5rem 0 2rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 3rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      margin-bottom: 2rem;
+    }
+    .footer-brand .brand { color: white; font-size: 1.15rem; margin-bottom: 0.75rem; }
+    .footer-brand p { font-size: 0.88rem; line-height: 1.6; max-width: 300px; }
+    .footer-brand .social-row {
+      display: flex;
+      gap: 0.6rem;
+      margin-top: 1.25rem;
+    }
+    .social-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+    .social-btn:hover { background: var(--red); }
+    .footer-col h4 {
+      color: white;
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 0.55rem; }
+    .footer-col ul a { font-size: 0.88rem; transition: color 0.2s; }
+    .footer-col ul a:hover { color: var(--orange-lt); }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      font-size: 0.82rem;
+    }
+    .footer-bottom a { color: var(--orange-lt); }
+
+    /* ── Mobile call button ── */
+    .mobile-call-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      padding: 0.85rem 1rem;
+      background: white;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.12);
+      border-top: 1px solid var(--border);
+    }
+    .mobile-call-bar a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      background: var(--red);
+      color: white;
+      padding: 0.85rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .hero-grid, .about-grid, .visit-grid { grid-template-columns: 1fr; }
+      .hero-visual { order: -1; }
+      .about-img-wrap { max-height: 300px; }
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 200px);
+      }
+      .gallery-item:first-child { grid-column: span 2; }
+      .reviews-grid { grid-template-columns: 1fr 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-brand { grid-column: span 2; }
+    }
+    @media (max-width: 640px) {
+      .nav-links, .nav-call { display: none; }
+      .hamburger { display: flex; }
+      .hero { padding: 2.5rem 0 3rem; }
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+      }
+      .gallery-item:first-child { grid-column: span 2; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-brand { grid-column: span 1; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+      .mobile-call-bar { display: block; }
+      body { padding-bottom: 80px; }
+      .about-features { grid-template-columns: 1fr; }
+      .menu-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 420px) {
+      .menu-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <header class="topbar">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="#home">
+          <div class="brand-icon">🌮</div>
+          <span>Sofia's Mexican Food</span>
+        </a>
+        <div class="nav-links">
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#visit">Visit Us</a>
+        </div>
+        <div class="nav-call">
+          <a class="btn btn-primary" href="tel:+12506895600">📞 Call Now</a>
+        </div>
+        <button class="hamburger" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#menu" onclick="closeMenu()">Menu</a>
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#gallery" onclick="closeMenu()">Gallery</a>
+        <a href="#reviews" onclick="closeMenu()">Reviews</a>
+        <a href="#visit" onclick="closeMenu()">Visit Us</a>
+        <a href="tel:+12506895600" style="color: var(--red); margin-top: 0.5rem;" onclick="closeMenu()">📞 (250) 689-5600</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+
+    <!-- ── Hero ── -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">🌶️ Fresh Mexican Flavours in Osoyoos, BC</span>
+          <h1>Authentic <span>Mexican Food</span> Worth Pulling Over For.</h1>
+          <p>
+            Fresh tacos, burritos, and traditional Mexican flavors made with love.
+            Located at the Osoyoos Fruit Basket on Crowsnest Highway — a local gem you won't want to miss.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="#menu">🌮 View Menu</a>
+            <a class="btn btn-secondary btn-lg" href="https://maps.app.goo.gl/2axbKxR4ixwWfeVJ9" target="_blank" rel="noopener noreferrer">📍 Get Directions</a>
+          </div>
+          <div class="rating-badge">
+            <span class="stars">★★★★★</span>
+            <strong>4.7</strong>
+            <span style="color:var(--muted)">— Rated by 574 guests on Google</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-img-wrap">
+            <img src="assets/hero-tacos.svg" alt="Plate of fresh fish tacos at Sofia's Mexican Food, Osoyoos BC" width="580" height="435" />
+          </div>
+          <div class="hero-badge">
+            <div class="badge-icon">📍</div>
+            <div>
+              <strong>Osoyoos Fruit Basket</strong>
+              <span>9910 Crowsnest Hwy, Osoyoos BC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Menu ── -->
+    <section id="menu" class="menu-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Our Menu</span>
+            <h2>Simple, fresh, and packed with flavour.</h2>
+          </div>
+          <p>Made fresh daily with quality ingredients. Priced $10–$20 per person.</p>
+        </div>
+
+        <div class="menu-categories" role="tablist" aria-label="Menu categories">
+          <button class="cat-btn active" data-cat="tacos" role="tab" aria-selected="true">🌮 Tacos</button>
+          <button class="cat-btn" data-cat="burritos" role="tab" aria-selected="false">🫔 Burritos</button>
+          <button class="cat-btn" data-cat="enchiladas" role="tab" aria-selected="false">🍽️ Enchiladas</button>
+          <button class="cat-btn" data-cat="quesadillas" role="tab" aria-selected="false">🧀 Quesadillas</button>
+          <button class="cat-btn" data-cat="appetizers" role="tab" aria-selected="false">🥟 Appetizers</button>
+          <button class="cat-btn" data-cat="veggie" role="tab" aria-selected="false">🥗 Veggie &amp; Vegan</button>
+          <button class="cat-btn" data-cat="sides" role="tab" aria-selected="false">🍚 Sides &amp; Soups</button>
+        </div>
+
+        <div class="menu-panels">
+          <!-- Tacos -->
+          <div data-panel="tacos" class="active menu-grid">
+            <article class="menu-card">
+              <div class="menu-card-icon">🐟</div>
+              <h3>Fish Tacos <span class="tag tag-popular">Popular</span></h3>
+              <p>Crispy fish, fresh cabbage, tangy salsa, and creamy sauce in a warm corn tortilla.</p>
+              <div class="price">$13.00</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🥩</div>
+              <h3>Pork Tacos</h3>
+              <p>Slow-cooked pork carnitas with fresh pico de gallo, cilantro, and lime.</p>
+              <div class="price">$13.50</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🐓</div>
+              <h3>Chicken Tacos</h3>
+              <p>Seasoned grilled chicken with fresh toppings and your choice of salsa.</p>
+              <div class="price">$13.00</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🥩</div>
+              <h3>Beef Tacos</h3>
+              <p>Seasoned ground beef with lettuce, tomato, cheddar, and sour cream.</p>
+              <div class="price">$13.00</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🌿</div>
+              <h3>Veggie Soft Tacos <span class="tag tag-vegan">Vegan Option</span></h3>
+              <p>Grilled seasonal vegetables in soft flour tortillas with fresh toppings.</p>
+              <div class="price">$13.50</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🌮</div>
+              <h3>Taco Combo</h3>
+              <p>Two tacos of your choice served with rice, beans, and fresh salsa.</p>
+              <div class="price">$16.00</div>
+            </article>
+          </div>
+
+          <!-- Burritos -->
+          <div data-panel="burritos" class="menu-grid">
+            <article class="menu-card">
+              <div class="menu-card-icon">🫔</div>
+              <h3>Sofia's Burrito <span class="tag tag-popular">Popular</span></h3>
+              <p>The signature burrito — generously filled with your choice of protein, rice, beans, cheese, sour cream, and house salsa.</p>
+              <div class="price">$18.00</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🐓</div>
+              <h3>Chicken Burrito</h3>
+              <p>Juicy grilled chicken wrapped with rice, black beans, cheese, and fresh vegetables.</p>
+              <div class="price">$15.00</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🥩</div>
+              <h3>Beef Burrito</h3>
+              <p>Seasoned beef with refried beans, lettuce, tomato, cheese, and salsa verde.</p>
+              <div class="price">$15.00</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🐷</div>
+              <h3>Pork Burrito</h3>
+              <p>Tender pulled pork with rice, pinto beans, pickled jalapeños, and cilantro.</p>
+              <div class="price">$15.00</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🌱</div>
+              <h3>Vegan Burrito <span class="tag tag-vegan">Vegan</span></h3>
+              <p>Black beans, roasted corn, peppers, rice, guacamole, and salsa in a whole wheat tortilla.</p>
+              <div class="price">$16.00</div>
+            </article>
+          </div>
+
+          <!-- Enchiladas -->
+          <div data-panel="enchiladas" class="menu-grid">
+            <article class="menu-card">
+              <div class="menu-card-icon">🍽️</div>
+              <h3>Enchiladas Rojas <span class="tag tag-popular">Popular</span></h3>
+              <p>Two corn tortillas filled with chicken, smothered in rich red chile sauce, topped with cheese and onion.</p>
+              <div class="price">$18.00</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🥩</div>
+              <h3>Beef Enchiladas</h3>
+              <p>Seasoned ground beef enchiladas with red sauce, melted cheese, and fresh garnish.</p>
+              <div class="price">$18.00</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🧀</div>
+              <h3>Cheese Enchiladas</h3>
+              <p>Classic cheese-stuffed enchiladas in tomato-based red sauce with sour cream and green onion.</p>
+              <div class="price">$15.00</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🌿</div>
+              <h3>Veggie Enchiladas <span class="tag tag-vegan">Vegan Option</span></h3>
+              <p>Roasted vegetables and black beans in corn tortillas with zesty red sauce.</p>
+              <div class="price">$16.00</div>
+            </article>
+          </div>
+
+          <!-- Quesadillas -->
+          <div data-panel="quesadillas" class="menu-grid">
+            <article class="menu-card">
+              <div class="menu-card-icon">🧀</div>
+              <h3>Classic Quesadilla</h3>
+              <p>Melted cheese in a golden flour tortilla, served with salsa, guacamole, and sour cream.</p>
+              <div class="price">$13.00</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🐓</div>
+              <h3>Chicken Quesadilla <span class="tag tag-popular">Popular</span></h3>
+              <p>Seasoned grilled chicken and cheese grilled to crispy perfection with all the sides.</p>
+              <div class="price">$15.00</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🥩</div>
+              <h3>Beef Quesadilla</h3>
+              <p>Seasoned beef and melted cheese with fresh pico de gallo and sour cream.</p>
+              <div class="price">$15.00</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🌿</div>
+              <h3>Veggie Quesadilla <span class="tag tag-vegan">Vegan Option</span></h3>
+              <p>Grilled peppers, mushrooms, and onions with melted cheese or dairy-free cheese.</p>
+              <div class="price">$13.50</div>
+            </article>
+          </div>
+
+          <!-- Appetizers -->
+          <div data-panel="appetizers" class="menu-grid">
+            <article class="menu-card">
+              <div class="menu-card-icon">🥟</div>
+              <h3>Taquitos <span class="tag tag-popular">Popular</span></h3>
+              <p>Crispy rolled corn tortillas filled with chicken or beef, topped with lettuce, sour cream, and salsa.</p>
+              <div class="price">$13.50</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🌯</div>
+              <h3>Flautas</h3>
+              <p>Crispy rolled flour tortillas stuffed with seasoned meat and served with dipping sauces.</p>
+              <div class="price">$13.50</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🌮</div>
+              <h3>Chimichangas</h3>
+              <p>Deep-fried burritos filled with beef or chicken, topped with cheese sauce and jalapeños.</p>
+              <div class="price">$16.00</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🍋</div>
+              <h3>Tostada</h3>
+              <p>Crispy flat tortilla layered with beans, lettuce, tomato, cheese, and your choice of protein.</p>
+              <div class="price">$13.50</div>
+            </article>
+          </div>
+
+          <!-- Veggie & Vegan -->
+          <div data-panel="veggie" class="menu-grid">
+            <article class="menu-card">
+              <div class="menu-card-icon">🌱</div>
+              <h3>Vegan Burrito <span class="tag tag-vegan">Vegan</span></h3>
+              <p>Black beans, roasted corn, peppers, rice, guacamole, and salsa in a whole wheat tortilla.</p>
+              <div class="price">$16.00</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🌿</div>
+              <h3>Veggie Soft Tacos <span class="tag tag-vegan">Vegan Option</span></h3>
+              <p>Grilled seasonal vegetables in soft flour tortillas with fresh toppings and guacamole.</p>
+              <div class="price">$13.50</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🥗</div>
+              <h3>Mexican Salad <span class="tag tag-vegan">Vegan Option</span></h3>
+              <p>Fresh mixed greens, roasted corn, black beans, avocado, tomato, and cilantro-lime dressing.</p>
+              <div class="price">$13.00</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🧀</div>
+              <h3>Veggie Quesadilla <span class="tag tag-vegan">Vegan Option</span></h3>
+              <p>Grilled peppers, mushrooms, and onions with melted cheese or dairy-free cheese.</p>
+              <div class="price">$13.50</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🌿</div>
+              <h3>Veggie Enchiladas <span class="tag tag-vegan">Vegan Option</span></h3>
+              <p>Roasted vegetables and black beans in corn tortillas with zesty red sauce.</p>
+              <div class="price">$16.00</div>
+            </article>
+          </div>
+
+          <!-- Sides & Soups -->
+          <div data-panel="sides" class="menu-grid">
+            <article class="menu-card">
+              <div class="menu-card-icon">🫘</div>
+              <h3>Refried Beans</h3>
+              <p>Creamy slow-cooked pinto beans, seasoned with spices and a touch of lard.</p>
+              <div class="price">Add-on</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🍚</div>
+              <h3>Mexican Rice</h3>
+              <p>Fluffy tomato-seasoned rice cooked with onion, garlic, and aromatic spices.</p>
+              <div class="price">Add-on</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🥑</div>
+              <h3>Fresh Guacamole</h3>
+              <p>Hand-mashed avocado with tomato, onion, cilantro, lime juice, and jalapeño.</p>
+              <div class="price">Add-on</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🍲</div>
+              <h3>Sopa de Pollo <span class="tag tag-popular">Popular</span></h3>
+              <p>Hearty chicken soup with vegetables, tortilla strips, avocado, and fresh lime.</p>
+              <div class="price">$13.50</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🫕</div>
+              <h3>Sopa de Res</h3>
+              <p>Traditional beef and vegetable soup — slow simmered and deeply flavorful.</p>
+              <div class="price">$14.00</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🌽</div>
+              <h3>Elote (Mexican Corn)</h3>
+              <p>Grilled corn on the cob with cotija cheese, mayo, chili powder, and lime.</p>
+              <div class="price">$6.00</div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── About ── -->
+    <section id="about" class="about-section">
+      <div class="container about-grid">
+        <div>
+          <span class="eyebrow">Our Story</span>
+          <h2>A local Osoyoos stop with real Mexican soul.</h2>
+          <p>
+            Sofia's Mexican Food is the kind of place you discover once and keep coming back to. Tucked inside the Osoyoos Fruit Basket on Crowsnest Highway, it's a small local spot serving authentic Mexican street food with fresh ingredients and bold flavors.
+          </p>
+          <p>
+            Whether you're a local or a road tripper passing through the beautiful Okanagan, Sofia's delivers a taste of genuine Mexican comfort food — warm, satisfying, and made with love.
+          </p>
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon">🌶️</div>
+              <div>
+                <strong>Authentic flavors</strong>
+                <span>Bold, satisfying dishes inspired by classic Mexican recipes.</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🤝</div>
+              <div>
+                <strong>Friendly service</strong>
+                <span>Welcoming to tourists and locals alike.</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🌿</div>
+              <div>
+                <strong>Fresh ingredients</strong>
+                <span>Quality produce and carefully prepared sauces.</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">📍</div>
+              <div>
+                <strong>Easy to find</strong>
+                <span>Right on Crowsnest Hwy in Osoyoos BC.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-img-wrap">
+          <img src="assets/burrito.svg" alt="A delicious burrito from Sofia's Mexican Food, Osoyoos BC" width="520" height="390" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Gallery ── -->
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Food Gallery</span>
+            <h2>What people are craving.</h2>
+          </div>
+          <p>Fresh, colorful, and made with authentic Mexican flavours.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="assets/hero-tacos.svg" alt="Fresh fish tacos at Sofia's Mexican Food" width="760" height="240" />
+            <div class="caption">Fish Tacos — A customer favourite</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/enchiladas.svg" alt="Enchiladas in red sauce at Sofia's Mexican Food" width="380" height="240" />
+            <div class="caption">Enchiladas Rojas</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/burrito.svg" alt="Sofia's loaded burrito" width="380" height="240" />
+            <div class="caption">Sofia's Signature Burrito</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/quesadilla.svg" alt="Quesadillas with dipping sauces" width="380" height="240" />
+            <div class="caption">Quesadillas &amp; Dips</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/taquitos.svg" alt="Crispy taquitos and flautas" width="380" height="240" />
+            <div class="caption">Taquitos &amp; Flautas</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/salad.svg" alt="Fresh Mexican salad" width="380" height="240" />
+            <div class="caption">Fresh Mexican Salad</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/soup.svg" alt="Sopa — Mexican soup" width="380" height="240" />
+            <div class="caption">Sopa de Pollo</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Reviews ── -->
+    <section id="reviews" class="reviews-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Guest Reviews</span>
+            <h2>Loved by locals and visitors alike.</h2>
+          </div>
+          <p>
+            <strong>4.7 ★</strong> on Google — rated by 574 guests.
+            <a href="https://maps.app.goo.gl/2axbKxR4ixwWfeVJ9" target="_blank" rel="noopener noreferrer" style="color:var(--red); font-weight:600;">Read all reviews →</a>
+          </p>
+        </div>
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote>"The food was delicious, great service, very clean and friendly, calm atmosphere overlooking beautiful Osoyoos. Highly recommend!"</blockquote>
+            <div class="reviewer">
+              <div class="reviewer-avatar">AV</div>
+              <div class="reviewer-info">
+                <strong>Alejandra Valdivia</strong>
+                <span>Google Review · Local Guide</span>
+              </div>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote>"Crispy fish, fresh veggies and tasty salsa. Best fish tacos I've had in the Okanagan — we'll definitely be back next time we drive through!"</blockquote>
+            <div class="reviewer">
+              <div class="reviewer-avatar">JM</div>
+              <div class="reviewer-info">
+                <strong>James M.</strong>
+                <span>Google Review · Visitor</span>
+              </div>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote>"We ordered veggie soft tacos and a veggie burrito — both were incredible! Highly recommend this place for authentic Mexican food in Osoyoos."</blockquote>
+            <div class="reviewer">
+              <div class="reviewer-avatar">SR</div>
+              <div class="reviewer-info">
+                <strong>Sarah R.</strong>
+                <span>Google Review · Visitor</span>
+              </div>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote>"Stumbled upon this little gem while road tripping through Osoyoos. The burrito was massive, fresh, and packed with flavour. 10/10 would stop again."</blockquote>
+            <div class="reviewer">
+              <div class="reviewer-avatar">KL</div>
+              <div class="reviewer-info">
+                <strong>Karen L.</strong>
+                <span>Google Review · Road Tripper</span>
+              </div>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote>"Enchiladas in red sauce are absolutely amazing. The sauce has so much depth. Great prices too — under $20 for a full meal is a steal in 2024."</blockquote>
+            <div class="reviewer">
+              <div class="reviewer-avatar">MP</div>
+              <div class="reviewer-info">
+                <strong>Marco P.</strong>
+                <span>Google Review · Osoyoos Local</span>
+              </div>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote>"Love this spot! Friendly staff, generous portions, and the fish tacos are the best. Always recommend Sofia's to anyone visiting Osoyoos."</blockquote>
+            <div class="reviewer">
+              <div class="reviewer-avatar">TC</div>
+              <div class="reviewer-info">
+                <strong>Tina C.</strong>
+                <span>Google Review · Regular Customer</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Visit Us ── -->
+    <section id="visit" class="visit-section">
+      <div class="container visit-grid">
+        <div class="visit-info">
+          <span class="eyebrow">Visit Sofia's</span>
+          <h2>Find us in Osoyoos</h2>
+          <ul class="info-list">
+            <li>
+              <span class="info-icon">📍</span>
+              <div>
+                <strong>Address</strong>
+                9910 Crowsnest Hwy, Osoyoos, BC V0H 1V2<br />
+                <em style="font-size:0.88rem;color:var(--muted);">Located inside Osoyoos Fruit Basket</em>
+              </div>
+            </li>
+            <li>
+              <span class="info-icon">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+12506895600">(250) 689-5600</a>
+              </div>
+            </li>
+            <li>
+              <span class="info-icon">⭐</span>
+              <div>
+                <strong>Google Rating</strong>
+                4.7 / 5 from 574 reviews — <a href="https://maps.app.goo.gl/2axbKxR4ixwWfeVJ9" target="_blank" rel="noopener noreferrer">View on Google Maps</a>
+              </div>
+            </li>
+            <li>
+              <span class="info-icon">💰</span>
+              <div>
+                <strong>Price Range</strong>
+                $10 – $20 per person
+              </div>
+            </li>
+            <li>
+              <span class="info-icon">🕐</span>
+              <div>
+                <strong>Hours of Operation</strong>
+                Please check Google Maps or call for current hours as they may vary by season.
+              </div>
+            </li>
+          </ul>
+          <div class="visit-actions">
+            <a class="btn btn-primary" href="https://maps.app.goo.gl/2axbKxR4ixwWfeVJ9" target="_blank" rel="noopener noreferrer">📍 Open in Google Maps</a>
+            <a class="btn btn-teal" href="tel:+12506895600">📞 Call Restaurant</a>
+          </div>
+        </div>
+        <div>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2608.4!2d-119.4701!3d49.0291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537e5d7a16f6b3f7%3A0x3a5b7b4d7c1e8a9b!2sSofia&#39;s%20Mexican%20Food!5e0!3m2!1sen!2sca!4v1710000000000!5m2!1sen!2sca"
+              width="600"
+              height="380"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Sofia's Mexican Food location on Google Maps"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA Banner ── -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready for the best Mexican food in Osoyoos?</h2>
+        <p>Stop in at 9910 Crowsnest Hwy — inside the Osoyoos Fruit Basket. We'd love to see you!</p>
+        <div class="cta-buttons">
+          <a class="btn btn-white btn-lg" href="#menu">🌮 See Full Menu</a>
+          <a class="btn btn-outline-white btn-lg" href="https://maps.app.goo.gl/2axbKxR4ixwWfeVJ9" target="_blank" rel="noopener noreferrer">📍 Get Directions</a>
+          <a class="btn btn-outline-white btn-lg" href="tel:+12506895600">📞 (250) 689-5600</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <div class="brand-icon">🌮</div>
+            <span>Sofia's Mexican Food</span>
+          </div>
+          <p>Authentic Mexican food served with love in Osoyoos, BC. Tacos, burritos, enchiladas, quesadillas, and more — made fresh daily.</p>
+          <div class="social-row">
+            <a class="social-btn" href="#" aria-label="Facebook">📘</a>
+            <a class="social-btn" href="#" aria-label="Instagram">📸</a>
+            <a class="social-btn" href="#" aria-label="Google Maps" target="_blank" rel="noopener noreferrer">🗺️</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Sofia's</a></li>
+            <li><a href="#gallery">Food Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#visit">Visit Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+12506895600">(250) 689-5600</a></li>
+            <li><a href="https://maps.app.goo.gl/2axbKxR4ixwWfeVJ9" target="_blank" rel="noopener noreferrer">Google Maps</a></li>
+            <li style="font-size:0.85rem; color:rgba(255,255,255,0.5); padding-top:0.25rem;">9910 Crowsnest Hwy<br />Osoyoos, BC V0H 1V2</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Sofia's Mexican Food — Osoyoos, BC. All rights reserved.</span>
+        <span>Made with ❤️ for the best Mexican food in the Okanagan.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Mobile Call Bar ── -->
+  <div class="mobile-call-bar" role="complementary" aria-label="Call Sofia's Mexican Food">
+    <a href="tel:+12506895600" aria-label="Call Sofia's Mexican Food at (250) 689-5600">
+      📞 Call Sofia's — (250) 689-5600
+    </a>
+  </div>
+
+  <script>
+    // ── Mobile menu toggle ──
+    const toggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    toggle.addEventListener('click', function () {
+      const isOpen = mobileMenu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    function closeMenu() {
+      mobileMenu.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+
+    // ── Menu category tabs ──
+    const catBtns = document.querySelectorAll('.cat-btn');
+    const panels = document.querySelectorAll('.menu-panels > div');
+
+    catBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const cat = btn.getAttribute('data-cat');
+
+        catBtns.forEach(function (b) {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+
+        panels.forEach(function (p) {
+          if (p.getAttribute('data-panel') === cat) {
+            p.classList.add('active');
+          } else {
+            p.classList.remove('active');
+          }
+        });
+      });
+    });
+
+    // ── Smooth scroll offset for sticky nav ──
+    document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+      anchor.addEventListener('click', function (e) {
+        const href = anchor.getAttribute('href');
+        if (href === '#') return;
+        const target = document.querySelector(href);
+        if (!target) return;
+        e.preventDefault();
+        const offset = 80;
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>

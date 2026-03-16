@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <radialGradient id="bg3" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#fce4ec"/>
+      <stop offset="100%" stop-color="#ffccbc"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg3)"/>
+  <circle cx="560" cy="40" r="25" fill="#c62828" opacity="0.2"/>
+  <circle cx="40" cy="360" r="20" fill="#ff9800" opacity="0.15"/>
+  <!-- Plate -->
+  <ellipse cx="300" cy="240" rx="225" ry="130" fill="white" stroke="#eeeeee" stroke-width="3"/>
+  <ellipse cx="300" cy="240" rx="205" ry="115" fill="none" stroke="#f5f5f5" stroke-width="2"/>
+  <!-- Enchiladas -->
+  <!-- Enchilada 1 -->
+  <rect x="155" y="190" width="290" height="55" rx="27" ry="27" fill="#8d4e2a"/>
+  <rect x="160" y="195" width="280" height="45" rx="22" ry="22" fill="#6d3b1a"/>
+  <!-- Red sauce -->
+  <rect x="155" y="185" width="290" height="75" rx="28" ry="28" fill="#c62828" opacity="0.85"/>
+  <rect x="160" y="190" width="280" height="65" rx="23" ry="23" fill="#8d4e2a"/>
+  <!-- Enchilada 2 -->
+  <rect x="160" y="255" width="280" height="55" rx="27" ry="27" fill="#6d3b1a"/>
+  <!-- Red sauce layer 2 -->
+  <rect x="155" y="248" width="290" height="70" rx="25" ry="25" fill="#c62828" opacity="0.75"/>
+  <rect x="162" y="255" width="276" height="58" rx="22" ry="22" fill="#795548"/>
+  <!-- Cheese on top -->
+  <path d="M175,205 Q220,195 270,205 Q310,215 355,205 Q390,195 420,205" stroke="#ffd600" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.9"/>
+  <path d="M175,255 Q220,245 270,255 Q310,265 355,255 Q390,245 420,255" stroke="#ffeb3b" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.9"/>
+  <!-- Onion rings -->
+  <ellipse cx="230" cy="220" rx="18" ry="8" fill="white" opacity="0.7"/>
+  <ellipse cx="300" cy="225" rx="18" ry="8" fill="white" opacity="0.7"/>
+  <ellipse cx="370" cy="220" rx="18" ry="8" fill="white" opacity="0.7"/>
+  <!-- Sauce pool -->
+  <ellipse cx="300" cy="320" rx="120" ry="25" fill="#c62828" opacity="0.5"/>
+  <!-- Garnish -->
+  <circle cx="200" cy="155" r="15" fill="#66bb6a"/>
+  <circle cx="240" cy="150" r="12" fill="#81c784"/>
+  <circle cx="360" cy="155" r="15" fill="#66bb6a"/>
+  <circle cx="400" cy="150" r="12" fill="#81c784"/>
+  <!-- Title -->
+  <text x="300" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#c62828">★★★★★</text>
+  <text x="300" y="73" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#795548" font-weight="bold">Enchiladas in Red Sauce</text>
+</svg>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#ffe0b2"/>
+    </radialGradient>
+    <radialGradient id="plate" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f5f5f5"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <!-- Decorative dots -->
+  <circle cx="40" cy="40" r="20" fill="#ff9800" opacity="0.2"/>
+  <circle cx="560" cy="360" r="30" fill="#c62828" opacity="0.15"/>
+  <circle cx="550" cy="50" r="15" fill="#00acc1" opacity="0.2"/>
+  <circle cx="50" cy="350" r="25" fill="#ff9800" opacity="0.15"/>
+  <!-- Plate -->
+  <ellipse cx="300" cy="230" rx="230" ry="140" fill="url(#plate)" stroke="#e0e0e0" stroke-width="3"/>
+  <ellipse cx="300" cy="230" rx="210" ry="120" fill="none" stroke="#f5f5f5" stroke-width="2"/>
+  <!-- Taco 1 -->
+  <g transform="translate(160,140)">
+    <!-- Shell -->
+    <path d="M0,80 Q40,-20 80,80" fill="#f9a825" stroke="#f57f17" stroke-width="2"/>
+    <path d="M5,78 Q40,-10 75,78" fill="#ffcc02" stroke="none" opacity="0.5"/>
+    <!-- Lettuce -->
+    <ellipse cx="40" cy="68" rx="32" ry="14" fill="#66bb6a"/>
+    <!-- Meat -->
+    <ellipse cx="40" cy="62" rx="26" ry="10" fill="#8d4e2a"/>
+    <!-- Tomato -->
+    <circle cx="28" cy="58" r="7" fill="#e53935"/>
+    <circle cx="50" cy="56" r="6" fill="#e53935"/>
+    <!-- Cheese -->
+    <path d="M15,65 Q40,55 65,65" stroke="#ffd600" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- Sour cream -->
+    <path d="M25,70 Q40,63 55,70" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- Taco 2 -->
+  <g transform="translate(260,150)">
+    <path d="M0,75 Q38,-18 76,75" fill="#ffb300" stroke="#e65100" stroke-width="2"/>
+    <path d="M5,73 Q38,-8 71,73" fill="#ffd740" stroke="none" opacity="0.5"/>
+    <ellipse cx="38" cy="63" rx="30" ry="13" fill="#81c784"/>
+    <ellipse cx="38" cy="58" rx="24" ry="9" fill="#795548"/>
+    <circle cx="26" cy="53" r="6" fill="#ef5350"/>
+    <circle cx="48" cy="52" r="5" fill="#ef5350"/>
+    <path d="M13,61 Q38,52 63,61" stroke="#ffd600" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M22,66 Q38,60 54,66" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- Taco 3 (fish) -->
+  <g transform="translate(355,145)">
+    <path d="M0,78 Q40,-15 80,78" fill="#f9a825" stroke="#f57f17" stroke-width="2"/>
+    <path d="M5,76 Q40,-5 75,76" fill="#ffcc02" stroke="none" opacity="0.5"/>
+    <ellipse cx="40" cy="66" rx="32" ry="14" fill="#80cbc4"/>
+    <ellipse cx="40" cy="60" rx="26" ry="10" fill="#f5f5f5"/>
+    <circle cx="28" cy="56" r="7" fill="#ff7043"/>
+    <circle cx="52" cy="54" r="6" fill="#ffca28"/>
+    <path d="M14,63 Q40,54 66,63" stroke="#ffd600" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M24,68 Q40,62 56,68" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- Salsa bowl -->
+  <ellipse cx="300" cy="310" rx="45" ry="20" fill="#e53935" opacity="0.9"/>
+  <ellipse cx="300" cy="305" rx="42" ry="17" fill="#ef5350"/>
+  <ellipse cx="300" cy="302" rx="38" ry="14" fill="#e53935"/>
+  <!-- Lime wedges -->
+  <g transform="translate(200,295)">
+    <path d="M0,0 L25,0 Q30,12 15,20 Q0,12 0,0Z" fill="#aed581"/>
+    <path d="M2,5 L23,5" stroke="#8bc34a" stroke-width="1" fill="none"/>
+  </g>
+  <g transform="translate(375,290)">
+    <path d="M0,0 L25,0 Q30,12 15,20 Q0,12 0,0Z" fill="#aed581"/>
+    <path d="M2,5 L23,5" stroke="#8bc34a" stroke-width="1" fill="none"/>
+  </g>
+  <!-- Stars/rating decoration -->
+  <text x="300" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#ff9800">★★★★★</text>
+  <text x="300" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#795548" font-weight="bold">Sofia's Fish Tacos</text>
+</svg>

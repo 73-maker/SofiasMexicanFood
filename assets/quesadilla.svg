@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <radialGradient id="bg4" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#fffde7"/>
+      <stop offset="100%" stop-color="#fff9c4"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg4)"/>
+  <!-- Plate -->
+  <ellipse cx="300" cy="230" rx="220" ry="130" fill="white" stroke="#eeeeee" stroke-width="3"/>
+  <!-- Quesadilla wedges -->
+  <g transform="translate(300,230)">
+    <!-- Wedge 1 -->
+    <path d="M0,0 L120,-80 A145,145 0 0,1 145,0 Z" fill="#f9a825"/>
+    <path d="M0,0 L120,-80 A145,145 0 0,1 145,0 Z" fill="none" stroke="#e65100" stroke-width="2"/>
+    <!-- Wedge 2 -->
+    <path d="M0,0 L145,0 A145,145 0 0,1 80,120 Z" fill="#ffb300"/>
+    <path d="M0,0 L145,0 A145,145 0 0,1 80,120 Z" fill="none" stroke="#e65100" stroke-width="2"/>
+    <!-- Wedge 3 -->
+    <path d="M0,0 L80,120 A145,145 0 0,1 -80,120 Z" fill="#f9a825"/>
+    <path d="M0,0 L80,120 A145,145 0 0,1 -80,120 Z" fill="none" stroke="#e65100" stroke-width="2"/>
+    <!-- Wedge 4 -->
+    <path d="M0,0 L-80,120 A145,145 0 0,1 -145,0 Z" fill="#ffb300"/>
+    <!-- Wedge 5 -->
+    <path d="M0,0 L-145,0 A145,145 0 0,1 -120,-80 Z" fill="#f9a825"/>
+    <!-- Wedge 6 -->
+    <path d="M0,0 L-120,-80 A145,145 0 0,1 120,-80 Z" fill="#ffb300"/>
+  </g>
+  <!-- Cheese layer visible at edges -->
+  <ellipse cx="300" cy="230" rx="145" ry="140" fill="none" stroke="#ffd600" stroke-width="6" opacity="0.6" stroke-dasharray="8,4"/>
+  <!-- Melted cheese dots -->
+  <circle cx="370" cy="195" r="8" fill="#ffd600" opacity="0.8"/>
+  <circle cx="380" cy="265" r="7" fill="#ffeb3b" opacity="0.8"/>
+  <circle cx="220" cy="285" r="8" fill="#ffd600" opacity="0.8"/>
+  <circle cx="210" cy="195" r="7" fill="#ffeb3b" opacity="0.8"/>
+  <!-- Salsa on side -->
+  <ellipse cx="120" cy="320" rx="45" ry="22" fill="#e53935" opacity="0.9"/>
+  <text x="120" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Salsa</text>
+  <!-- Guacamole -->
+  <ellipse cx="480" cy="320" rx="45" ry="22" fill="#558b2f" opacity="0.9"/>
+  <text x="480" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Guac</text>
+  <!-- Sour cream -->
+  <ellipse cx="300" cy="338" rx="40" ry="18" fill="white" stroke="#e0e0e0" stroke-width="2"/>
+  <text x="300" y="342" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9e9e9e">Sour Cream</text>
+  <!-- Title -->
+  <text x="300" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#ff9800">★★★★★</text>
+  <text x="300" y="73" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#795548" font-weight="bold">Quesadillas</text>
+</svg>
