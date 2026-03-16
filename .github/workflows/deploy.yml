@@ -1,0 +1,48 @@
+# Deploys Sofia's Mexican Food website to GitHub Pages
+# Live URL: https://73-maker.github.io/SofiasMexicanFood/
+#
+# Triggers automatically on every push to main.
+# You can also trigger it manually from the Actions tab.
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:   # lets you click "Run workflow" in the Actions tab
+
+# Required permissions for the official GitHub Pages deployment action
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only one deployment runs at a time; skip queued runs but don't cancel in-progress ones
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload site files
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload everything from the repo root (index.html + assets/)
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
