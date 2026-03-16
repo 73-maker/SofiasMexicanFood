@@ -1,44 +1,119 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
   <defs>
-    <radialGradient id="bg6" cx="50%" cy="60%" r="70%">
-      <stop offset="0%" stop-color="#fff3e0"/>
-      <stop offset="100%" stop-color="#ffe0b2"/>
+    <radialGradient id="tableT" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#4E342E"/>
+      <stop offset="100%" stop-color="#3E2723"/>
     </radialGradient>
+    <filter id="shT"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity="0.4"/></filter>
   </defs>
-  <rect width="600" height="400" fill="url(#bg6)"/>
+  <rect width="800" height="500" fill="url(#tableT)"/>
   <!-- Plate -->
-  <ellipse cx="300" cy="240" rx="220" ry="130" fill="white" stroke="#eeeeee" stroke-width="3"/>
-  <!-- Taquito / Flauta rolls -->
-  <!-- Roll 1 -->
-  <rect x="140" y="185" width="195" height="40" rx="20" ry="20" fill="#f9a825" transform="rotate(-5,237,205)"/>
-  <rect x="145" y="190" width="185" height="30" rx="15" ry="15" fill="#ffb300" transform="rotate(-5,237,205)"/>
-  <!-- crispy lines -->
-  <path d="M170,188 Q210,178 250,186 Q290,194 330,184" stroke="#e65100" stroke-width="1.5" fill="none" transform="rotate(-5,250,186)" opacity="0.6"/>
-  <!-- Roll 2 -->
-  <rect x="145" y="230" width="195" height="40" rx="20" ry="20" fill="#ffb300" transform="rotate(3,242,250)"/>
-  <rect x="150" y="235" width="185" height="30" rx="15" ry="15" fill="#f9a825" transform="rotate(3,242,250)"/>
-  <path d="M175,235 Q215,228 255,234 Q295,240 330,232" stroke="#e65100" stroke-width="1.5" fill="none" transform="rotate(3,252,234)" opacity="0.6"/>
-  <!-- Roll 3 -->
-  <rect x="270" y="190" width="185" height="38" rx="19" ry="19" fill="#ffa000" transform="rotate(6,362,209)"/>
-  <rect x="275" y="195" width="175" height="28" rx="14" ry="14" fill="#ffb300" transform="rotate(6,362,209)"/>
-  <!-- Toppings on top -->
-  <!-- Lettuce shred -->
-  <path d="M180,185 Q220,170 270,178 Q310,186 350,175 Q390,164 420,172" stroke="#66bb6a" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.9"/>
-  <path d="M185,180 Q225,168 270,176" stroke="#81c784" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <ellipse cx="400" cy="295" rx="308" ry="178" fill="#E65100" filter="url(#shT)"/>
+  <ellipse cx="400" cy="290" rx="294" ry="165" fill="white"/>
+  <ellipse cx="400" cy="288" rx="270" ry="150" fill="#FAFAFA"/>
+
+  <!-- Taquito 1 — crispy golden roll (top left diagonal) -->
+  <g transform="translate(165,190) rotate(-8)">
+    <rect width="200" height="38" rx="19" ry="19" fill="#E65100"/>
+    <rect x="2" y="2" width="196" height="34" rx="17" ry="17" fill="#F9A825"/>
+    <rect x="4" y="4" width="192" height="30" rx="15" ry="15" fill="#FFB300"/>
+    <!-- Crispy texture -->
+    <path d="M20,10 Q60,5 100,10 Q140,15 180,10" stroke="#E65100" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <path d="M20,25 Q60,20 100,25 Q140,30 180,25" stroke="#BF360C" stroke-width="1.2" fill="none" opacity="0.35"/>
+    <!-- End texture -->
+    <ellipse cx="0" cy="19" rx="12" ry="19" fill="#EF6C00" opacity="0.8"/>
+    <ellipse cx="200" cy="19" rx="12" ry="19" fill="#EF6C00" opacity="0.8"/>
+    <!-- Golden brown spots -->
+    <circle cx="40" cy="14" r="5" fill="#E65100" opacity="0.4"/>
+    <circle cx="80" cy="18" r="6" fill="#BF360C" opacity="0.35"/>
+    <circle cx="130" cy="12" r="5" fill="#E65100" opacity="0.4"/>
+    <circle cx="165" cy="17" r="5" fill="#BF360C" opacity="0.35"/>
+  </g>
+
+  <!-- Taquito 2 (middle) -->
+  <g transform="translate(168,242) rotate(-4)">
+    <rect width="210" height="40" rx="20" ry="20" fill="#BF360C"/>
+    <rect x="2" y="2" width="206" height="36" rx="18" ry="18" fill="#FFB300"/>
+    <rect x="4" y="4" width="202" height="32" rx="16" ry="16" fill="#F9A825"/>
+    <path d="M20,12 Q65,6 110,12 Q155,18 195,12" stroke="#E65100" stroke-width="1.5" fill="none" opacity="0.35"/>
+    <path d="M20,26 Q65,20 110,26 Q155,32 195,26" stroke="#E65100" stroke-width="1.2" fill="none" opacity="0.3"/>
+    <ellipse cx="0" cy="20" rx="13" ry="20" fill="#EF6C00" opacity="0.75"/>
+    <ellipse cx="210" cy="20" rx="13" ry="20" fill="#EF6C00" opacity="0.75"/>
+    <circle cx="50" cy="15" r="6" fill="#BF360C" opacity="0.35"/>
+    <circle cx="100" cy="19" r="6" fill="#E65100" opacity="0.3"/>
+    <circle cx="155" cy="14" r="5" fill="#BF360C" opacity="0.35"/>
+  </g>
+
+  <!-- Taquito 3 -->
+  <g transform="translate(172,296) rotate(-2)">
+    <rect width="205" height="38" rx="19" ry="19" fill="#E65100"/>
+    <rect x="2" y="2" width="201" height="34" rx="17" ry="17" fill="#FFB300"/>
+    <rect x="4" y="4" width="197" height="30" rx="15" ry="15" fill="#FFA000"/>
+    <path d="M20,10 Q60,5 100,10 Q145,15 185,10" stroke="#BF360C" stroke-width="1.5" fill="none" opacity="0.35"/>
+    <ellipse cx="0" cy="19" rx="12" ry="19" fill="#EF6C00" opacity="0.8"/>
+    <ellipse cx="205" cy="19" rx="12" ry="19" fill="#EF6C00" opacity="0.8"/>
+    <circle cx="55" cy="15" r="6" fill="#E65100" opacity="0.35"/>
+    <circle cx="115" cy="17" r="7" fill="#BF360C" opacity="0.3"/>
+    <circle cx="165" cy="14" r="5" fill="#E65100" opacity="0.35"/>
+  </g>
+
+  <!-- Toppings on top of taquitos: Shredded lettuce, sour cream, guac -->
+  <!-- Shredded cabbage / lettuce heap -->
+  <g transform="translate(160,160)">
+    <ellipse cx="100" cy="30" rx="105" ry="35" fill="#81C784" opacity="0.95"/>
+    <path d="M10,28 Q35,12 60,24 Q85,38 110,22 Q135,8 160,24 Q180,36 190,26" fill="#A5D6A7" opacity="0.8"/>
+    <path d="M15,18 Q40,8 65,16 Q90,24 115,14 Q140,4 165,16" fill="#C5E1A5" opacity="0.7"/>
+    <!-- Shred lines -->
+    <path d="M30,22 Q50,14 70,22" stroke="#66BB6A" stroke-width="2" fill="none"/>
+    <path d="M80,18 Q100,10 120,18" stroke="#66BB6A" stroke-width="2" fill="none"/>
+    <path d="M130,22 Q148,14 166,22" stroke="#66BB6A" stroke-width="2" fill="none"/>
+  </g>
   <!-- Sour cream dollops -->
-  <circle cx="220" cy="175" r="12" fill="white" opacity="0.9"/>
-  <circle cx="280" cy="170" r="10" fill="white" opacity="0.85"/>
-  <circle cx="350" cy="172" r="11" fill="white" opacity="0.9"/>
-  <!-- Salsa dots -->
-  <circle cx="250" cy="172" r="7" fill="#e53935" opacity="0.9"/>
-  <circle cx="315" cy="168" r="6" fill="#e53935" opacity="0.85"/>
-  <!-- Guacamole -->
-  <ellipse cx="400" cy="300" rx="55" ry="30" fill="#558b2f" opacity="0.9"/>
-  <text x="400" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">Guacamole</text>
-  <!-- Salsa side -->
-  <ellipse cx="180" cy="305" rx="50" ry="27" fill="#e53935" opacity="0.9"/>
-  <text x="180" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">Salsa Roja</text>
-  <!-- Title -->
-  <text x="300" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#ff9800">★★★★★</text>
-  <text x="300" y="73" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#795548" font-weight="bold">Taquitos &amp; Flautas</text>
+  <circle cx="216" cy="178" r="14" fill="white" opacity="0.95"/>
+  <circle cx="270" cy="170" r="13" fill="white" opacity="0.9"/>
+  <circle cx="325" cy="174" r="14" fill="white" opacity="0.9"/>
+  <!-- Salsa roja dots -->
+  <circle cx="243" cy="165" r="9" fill="#EF5350" opacity="0.95"/>
+  <circle cx="298" cy="163" r="8" fill="#EF5350" opacity="0.9"/>
+  <!-- Guacamole swirl -->
+  <ellipse cx="360" cy="172" rx="22" ry="14" fill="#43A047" opacity="0.9"/>
+  <ellipse cx="360" cy="170" rx="18" ry="11" fill="#66BB6A"/>
+  <circle cx="360" cy="168" r="5" fill="#2E7D32"/>
+
+  <!-- Right side: flautas (longer, flour tortilla rolls) -->
+  <g transform="translate(425,195)">
+    <rect width="225" height="42" rx="21" ry="21" fill="#FFF8E1"/>
+    <rect x="2" y="2" width="221" height="38" rx="19" ry="19" fill="#FFFDE7"/>
+    <!-- Flour tortilla look - slightly lighter, more golden -->
+    <rect x="4" y="6" width="217" height="30" rx="15" ry="15" fill="#FFF9C4" opacity="0.5"/>
+    <!-- Grill/crisp marks -->
+    <path d="M20,10 Q70,5 115,10 Q160,15 205,10" stroke="#F9A825" stroke-width="1.8" fill="none" opacity="0.5"/>
+    <path d="M20,28 Q70,22 115,28 Q160,34 205,28" stroke="#F9A825" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <ellipse cx="0" cy="21" rx="14" ry="21" fill="#F9A825" opacity="0.7"/>
+    <ellipse cx="225" cy="21" rx="14" ry="21" fill="#F9A825" opacity="0.7"/>
+    <circle cx="50" cy="15" r="7" fill="#F9A825" opacity="0.3"/>
+    <circle cx="115" cy="20" r="8" fill="#FFB300" opacity="0.25"/>
+    <circle cx="175" cy="14" r="6" fill="#F9A825" opacity="0.3"/>
+  </g>
+  <g transform="translate(428,250)">
+    <rect width="220" height="40" rx="20" ry="20" fill="#FFFDE7"/>
+    <rect x="2" y="2" width="216" height="36" rx="18" ry="18" fill="#FFF9C4"/>
+    <path d="M18,10 Q65,4 112,10 Q158,16 200,10" stroke="#F9A825" stroke-width="1.8" fill="none" opacity="0.4"/>
+    <path d="M18,26 Q65,20 112,26 Q158,32 200,26" stroke="#F9A825" stroke-width="1.5" fill="none" opacity="0.35"/>
+    <ellipse cx="0" cy="20" rx="13" ry="20" fill="#F9A825" opacity="0.65"/>
+    <ellipse cx="220" cy="20" rx="13" ry="20" fill="#F9A825" opacity="0.65"/>
+  </g>
+
+  <!-- Salsa on side -->
+  <ellipse cx="590" cy="395" rx="60" ry="28" fill="#B71C1C" opacity="0.9"/>
+  <ellipse cx="590" cy="390" rx="54" ry="23" fill="#EF5350"/>
+  <text x="590" y="395" text-anchor="middle" font-family="'Poppins',Arial,sans-serif" font-size="12" fill="white" font-weight="700">Salsa Roja</text>
+
+  <!-- Guacamole side -->
+  <ellipse cx="225" cy="400" rx="62" ry="29" fill="#2E7D32" opacity="0.9"/>
+  <ellipse cx="225" cy="395" rx="56" ry="24" fill="#43A047"/>
+  <text x="225" y="400" text-anchor="middle" font-family="'Poppins',Arial,sans-serif" font-size="12" fill="white" font-weight="700">Guacamole</text>
+
+  <text x="400" y="42" text-anchor="middle" font-family="'Poppins',Arial,sans-serif" font-size="26" fill="#FFD600" letter-spacing="4">★★★★★</text>
+  <text x="400" y="72" text-anchor="middle" font-family="'Poppins',Arial,sans-serif" font-size="15" fill="rgba(255,255,255,0.9)" font-weight="700" letter-spacing="1">TAQUITOS &amp; FLAUTAS — SOFIA'S OSOYOOS</text>
 </svg>

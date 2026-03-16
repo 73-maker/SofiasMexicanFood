@@ -1,48 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
   <defs>
-    <radialGradient id="bg4" cx="50%" cy="50%" r="70%">
-      <stop offset="0%" stop-color="#fffde7"/>
-      <stop offset="100%" stop-color="#fff9c4"/>
+    <radialGradient id="tableQ" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#4E342E"/>
+      <stop offset="100%" stop-color="#3E2723"/>
     </radialGradient>
+    <filter id="shQ"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity="0.4"/></filter>
   </defs>
-  <rect width="600" height="400" fill="url(#bg4)"/>
-  <!-- Plate -->
-  <ellipse cx="300" cy="230" rx="220" ry="130" fill="white" stroke="#eeeeee" stroke-width="3"/>
-  <!-- Quesadilla wedges -->
-  <g transform="translate(300,230)">
-    <!-- Wedge 1 -->
-    <path d="M0,0 L120,-80 A145,145 0 0,1 145,0 Z" fill="#f9a825"/>
-    <path d="M0,0 L120,-80 A145,145 0 0,1 145,0 Z" fill="none" stroke="#e65100" stroke-width="2"/>
-    <!-- Wedge 2 -->
-    <path d="M0,0 L145,0 A145,145 0 0,1 80,120 Z" fill="#ffb300"/>
-    <path d="M0,0 L145,0 A145,145 0 0,1 80,120 Z" fill="none" stroke="#e65100" stroke-width="2"/>
-    <!-- Wedge 3 -->
-    <path d="M0,0 L80,120 A145,145 0 0,1 -80,120 Z" fill="#f9a825"/>
-    <path d="M0,0 L80,120 A145,145 0 0,1 -80,120 Z" fill="none" stroke="#e65100" stroke-width="2"/>
-    <!-- Wedge 4 -->
-    <path d="M0,0 L-80,120 A145,145 0 0,1 -145,0 Z" fill="#ffb300"/>
-    <!-- Wedge 5 -->
-    <path d="M0,0 L-145,0 A145,145 0 0,1 -120,-80 Z" fill="#f9a825"/>
-    <!-- Wedge 6 -->
-    <path d="M0,0 L-120,-80 A145,145 0 0,1 120,-80 Z" fill="#ffb300"/>
+  <rect width="800" height="500" fill="url(#tableQ)"/>
+  <!-- Orange rimmed plate -->
+  <ellipse cx="400" cy="285" rx="295" ry="172" fill="#E65100" filter="url(#shQ)"/>
+  <ellipse cx="400" cy="280" rx="280" ry="162" fill="white"/>
+  <ellipse cx="400" cy="278" rx="258" ry="148" fill="#FAFAFA"/>
+
+  <!-- Quesadilla wedges on plate — full quesadilla cut into 6 -->
+  <g transform="translate(400,255)">
+    <!-- Wedge 1 top-right -->
+    <path d="M0,0 L130,-88 A160,160 0 0,1 160,0 Z" fill="#F9A825" stroke="#E65100" stroke-width="2.5"/>
+    <!-- Cheese filling peek at cut -->
+    <path d="M4,0 L126,-85 A154,154 0 0,1 154,0 Z" fill="#FFB300" opacity="0.5"/>
+    <!-- Filling in wedge -->
+    <circle cx="100" cy="-40" r="10" fill="#FFD600" opacity="0.9"/>
+    <circle cx="118" cy="-20" r="8" fill="#FFD600" opacity="0.8"/>
+
+    <!-- Wedge 2 right -->
+    <path d="M0,0 L160,0 A160,160 0 0,1 88,132 Z" fill="#FFB300" stroke="#E65100" stroke-width="2.5"/>
+    <circle cx="130" cy="50" r="10" fill="#FFD600" opacity="0.9"/>
+    <circle cx="115" cy="78" r="8" fill="#FFD600" opacity="0.8"/>
+
+    <!-- Wedge 3 bottom-right -->
+    <path d="M0,0 L88,132 A160,160 0 0,1 -88,132 Z" fill="#F9A825" stroke="#E65100" stroke-width="2.5"/>
+    <circle cx="10" cy="120" r="10" fill="#FFD600" opacity="0.9"/>
+    <circle cx="-20" cy="108" r="8" fill="#EF5350" opacity="0.7"/>
+
+    <!-- Wedge 4 bottom-left -->
+    <path d="M0,0 L-88,132 A160,160 0 0,1 -160,0 Z" fill="#FFB300" stroke="#E65100" stroke-width="2.5"/>
+    <circle cx="-118" cy="80" r="10" fill="#FFD600" opacity="0.9"/>
+    <circle cx="-100" cy="50" r="8" fill="#66BB6A" opacity="0.8"/>
+
+    <!-- Wedge 5 left -->
+    <path d="M0,0 L-160,0 A160,160 0 0,1 -130,-88 Z" fill="#F9A825" stroke="#E65100" stroke-width="2.5"/>
+    <circle cx="-128" cy="-38" r="10" fill="#FFD600" opacity="0.9"/>
+
+    <!-- Wedge 6 top-left -->
+    <path d="M0,0 L-130,-88 A160,160 0 0,1 130,-88 Z" fill="#FFB300" stroke="#E65100" stroke-width="2.5"/>
+    <circle cx="0" cy="-120" r="11" fill="#FFD600" opacity="0.9"/>
+    <circle cx="-30" cy="-100" r="8" fill="#EF5350" opacity="0.7"/>
   </g>
-  <!-- Cheese layer visible at edges -->
-  <ellipse cx="300" cy="230" rx="145" ry="140" fill="none" stroke="#ffd600" stroke-width="6" opacity="0.6" stroke-dasharray="8,4"/>
-  <!-- Melted cheese dots -->
-  <circle cx="370" cy="195" r="8" fill="#ffd600" opacity="0.8"/>
-  <circle cx="380" cy="265" r="7" fill="#ffeb3b" opacity="0.8"/>
-  <circle cx="220" cy="285" r="8" fill="#ffd600" opacity="0.8"/>
-  <circle cx="210" cy="195" r="7" fill="#ffeb3b" opacity="0.8"/>
-  <!-- Salsa on side -->
-  <ellipse cx="120" cy="320" rx="45" ry="22" fill="#e53935" opacity="0.9"/>
-  <text x="120" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Salsa</text>
-  <!-- Guacamole -->
-  <ellipse cx="480" cy="320" rx="45" ry="22" fill="#558b2f" opacity="0.9"/>
-  <text x="480" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Guac</text>
+
+  <!-- Cheese melting out at cuts -->
+  <line x1="400" y1="255" x2="530" y2="167" stroke="#FFD600" stroke-width="4" opacity="0.7"/>
+  <line x1="400" y1="255" x2="560" y2="255" stroke="#FFD600" stroke-width="4" opacity="0.6"/>
+  <line x1="400" y1="255" x2="488" y2="387" stroke="#FFD600" stroke-width="4" opacity="0.7"/>
+  <line x1="400" y1="255" x2="312" y2="387" stroke="#FFD600" stroke-width="4" opacity="0.6"/>
+  <line x1="400" y1="255" x2="240" y2="255" stroke="#FFD600" stroke-width="4" opacity="0.7"/>
+  <line x1="400" y1="255" x2="270" y2="167" stroke="#FFD600" stroke-width="4" opacity="0.6"/>
+
+  <!-- Crispy golden edges -->
+  <circle cx="400" cy="255" r="163" fill="none" stroke="#E65100" stroke-width="5" stroke-dasharray="10,6" opacity="0.4"/>
+
+  <!-- Centre golden cheese pool -->
+  <circle cx="400" cy="255" r="22" fill="#FFD600" opacity="0.95"/>
+  <circle cx="400" cy="255" r="16" fill="#FFEB3B"/>
+
+  <!-- Salsa roja bowl -->
+  <ellipse cx="185" cy="415" rx="62" ry="30" fill="#B71C1C" opacity="0.95"/>
+  <ellipse cx="185" cy="410" rx="56" ry="25" fill="#D32F2F"/>
+  <ellipse cx="185" cy="407" rx="48" ry="21" fill="#EF5350" opacity="0.9"/>
+  <text x="185" y="413" text-anchor="middle" font-family="'Poppins',Arial,sans-serif" font-size="12" fill="white" font-weight="700">Salsa Roja</text>
+
+  <!-- Guacamole bowl -->
+  <ellipse cx="400" cy="430" rx="60" ry="28" fill="#2E7D32" opacity="0.95"/>
+  <ellipse cx="400" cy="425" rx="54" ry="23" fill="#388E3C"/>
+  <ellipse cx="400" cy="423" rx="46" ry="20" fill="#66BB6A" opacity="0.85"/>
+  <text x="400" y="428" text-anchor="middle" font-family="'Poppins',Arial,sans-serif" font-size="12" fill="white" font-weight="700">Guacamole</text>
+
   <!-- Sour cream -->
-  <ellipse cx="300" cy="338" rx="40" ry="18" fill="white" stroke="#e0e0e0" stroke-width="2"/>
-  <text x="300" y="342" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9e9e9e">Sour Cream</text>
-  <!-- Title -->
-  <text x="300" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#ff9800">★★★★★</text>
-  <text x="300" y="73" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#795548" font-weight="bold">Quesadillas</text>
+  <ellipse cx="615" cy="415" rx="58" ry="27" fill="#ECEFF1" stroke="#E0E0E0" stroke-width="2"/>
+  <ellipse cx="615" cy="411" rx="50" ry="23" fill="white"/>
+  <text x="615" y="416" text-anchor="middle" font-family="'Poppins',Arial,sans-serif" font-size="12" fill="#9E9E9E" font-weight="600">Sour Cream</text>
+
+  <text x="400" y="42" text-anchor="middle" font-family="'Poppins',Arial,sans-serif" font-size="26" fill="#FFD600" letter-spacing="4">★★★★★</text>
+  <text x="400" y="72" text-anchor="middle" font-family="'Poppins',Arial,sans-serif" font-size="15" fill="rgba(255,255,255,0.9)" font-weight="700" letter-spacing="1">QUESADILLAS — SOFIA'S MEXICAN FOOD</text>
 </svg>

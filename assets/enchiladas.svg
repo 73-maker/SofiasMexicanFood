@@ -1,43 +1,83 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
   <defs>
-    <radialGradient id="bg3" cx="50%" cy="50%" r="70%">
-      <stop offset="0%" stop-color="#fce4ec"/>
-      <stop offset="100%" stop-color="#ffccbc"/>
+    <radialGradient id="tableE" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#4E342E"/>
+      <stop offset="100%" stop-color="#3E2723"/>
     </radialGradient>
+    <radialGradient id="redSauce" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#E53935"/>
+      <stop offset="100%" stop-color="#B71C1C"/>
+    </radialGradient>
+    <filter id="sh3"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity="0.4"/></filter>
   </defs>
-  <rect width="600" height="400" fill="url(#bg3)"/>
-  <circle cx="560" cy="40" r="25" fill="#c62828" opacity="0.2"/>
-  <circle cx="40" cy="360" r="20" fill="#ff9800" opacity="0.15"/>
-  <!-- Plate -->
-  <ellipse cx="300" cy="240" rx="225" ry="130" fill="white" stroke="#eeeeee" stroke-width="3"/>
-  <ellipse cx="300" cy="240" rx="205" ry="115" fill="none" stroke="#f5f5f5" stroke-width="2"/>
-  <!-- Enchiladas -->
-  <!-- Enchilada 1 -->
-  <rect x="155" y="190" width="290" height="55" rx="27" ry="27" fill="#8d4e2a"/>
-  <rect x="160" y="195" width="280" height="45" rx="22" ry="22" fill="#6d3b1a"/>
-  <!-- Red sauce -->
-  <rect x="155" y="185" width="290" height="75" rx="28" ry="28" fill="#c62828" opacity="0.85"/>
-  <rect x="160" y="190" width="280" height="65" rx="23" ry="23" fill="#8d4e2a"/>
-  <!-- Enchilada 2 -->
-  <rect x="160" y="255" width="280" height="55" rx="27" ry="27" fill="#6d3b1a"/>
-  <!-- Red sauce layer 2 -->
-  <rect x="155" y="248" width="290" height="70" rx="25" ry="25" fill="#c62828" opacity="0.75"/>
-  <rect x="162" y="255" width="276" height="58" rx="22" ry="22" fill="#795548"/>
-  <!-- Cheese on top -->
-  <path d="M175,205 Q220,195 270,205 Q310,215 355,205 Q390,195 420,205" stroke="#ffd600" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.9"/>
-  <path d="M175,255 Q220,245 270,255 Q310,265 355,255 Q390,245 420,255" stroke="#ffeb3b" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.9"/>
-  <!-- Onion rings -->
-  <ellipse cx="230" cy="220" rx="18" ry="8" fill="white" opacity="0.7"/>
-  <ellipse cx="300" cy="225" rx="18" ry="8" fill="white" opacity="0.7"/>
-  <ellipse cx="370" cy="220" rx="18" ry="8" fill="white" opacity="0.7"/>
-  <!-- Sauce pool -->
-  <ellipse cx="300" cy="320" rx="120" ry="25" fill="#c62828" opacity="0.5"/>
-  <!-- Garnish -->
-  <circle cx="200" cy="155" r="15" fill="#66bb6a"/>
-  <circle cx="240" cy="150" r="12" fill="#81c784"/>
-  <circle cx="360" cy="155" r="15" fill="#66bb6a"/>
-  <circle cx="400" cy="150" r="12" fill="#81c784"/>
-  <!-- Title -->
-  <text x="300" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#c62828">★★★★★</text>
-  <text x="300" y="73" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#795548" font-weight="bold">Enchiladas in Red Sauce</text>
+  <rect width="800" height="500" fill="url(#tableE)"/>
+  <line x1="0" y1="90" x2="800" y2="108" stroke="rgba(255,255,255,0.03)" stroke-width="14"/>
+  <line x1="0" y1="270" x2="800" y2="288" stroke="rgba(255,255,255,0.025)" stroke-width="10"/>
+
+  <!-- Orange-rimmed plate (as in actual photos) -->
+  <ellipse cx="400" cy="300" rx="310" ry="178" fill="#E65100" filter="url(#sh3)"/>
+  <ellipse cx="400" cy="295" rx="296" ry="166" fill="white"/>
+  <ellipse cx="400" cy="293" rx="272" ry="152" fill="#FAFAFA"/>
+
+  <!-- Red sauce pool -->
+  <ellipse cx="400" cy="295" rx="240" ry="120" fill="url(#redSauce)" opacity="0.85"/>
+  <!-- Sauce depth ripples -->
+  <ellipse cx="400" cy="292" rx="220" ry="108" fill="#EF5350" opacity="0.5"/>
+
+  <!-- ENCHILADA 1 (bottom) -->
+  <rect x="150" y="250" width="500" height="72" rx="36" ry="36" fill="#795548"/>
+  <rect x="155" y="255" width="490" height="62" rx="31" ry="31" fill="#8D4E2A"/>
+  <!-- Red sauce on top -->
+  <rect x="148" y="246" width="504" height="82" rx="36" ry="36" fill="#C62828" opacity="0.82"/>
+  <rect x="153" y="251" width="494" height="72" rx="31" ry="31" fill="#8D4E2A"/>
+
+  <!-- ENCHILADA 2 (top) -->
+  <rect x="152" y="178" width="496" height="68" rx="34" ry="34" fill="#6D3B1A"/>
+  <rect x="157" y="183" width="486" height="58" rx="29" ry="29" fill="#795548"/>
+  <!-- Red sauce over both -->
+  <rect x="148" y="174" width="504" height="88" rx="36" ry="36" fill="#C62828" opacity="0.78"/>
+  <rect x="153" y="179" width="494" height="78" rx="31" ry="31" fill="#8D4E2A"/>
+
+  <!-- Top enchilada details -->
+  <!-- Shredded chicken visible at ends -->
+  <ellipse cx="170" cy="218" rx="28" ry="22" fill="#FFCC80"/>
+  <ellipse cx="630" cy="218" rx="28" ry="22" fill="#FFCC80"/>
+  <!-- Cheese sauce on top -->
+  <path d="M175,200 Q240,185 310,196 Q370,205 430,196 Q500,185 560,196 Q610,204 628,198" stroke="#FFD600" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.95"/>
+  <path d="M190,210 Q280,198 370,206 Q450,212 540,204 Q590,199 615,205" stroke="#FFEB3B" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Bottom enchilada cheese -->
+  <path d="M175,272 Q250,258 340,268 Q400,275 460,268 Q550,258 625,270" stroke="#FFD600" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- White onion rings garnish -->
+  <ellipse cx="260" cy="192" rx="22" ry="10" fill="white" opacity="0.85"/>
+  <ellipse cx="320" cy="196" rx="22" ry="10" fill="white" opacity="0.8"/>
+  <ellipse cx="400" cy="190" rx="24" ry="11" fill="white" opacity="0.85"/>
+  <ellipse cx="480" cy="194" rx="22" ry="10" fill="white" opacity="0.8"/>
+  <ellipse cx="540" cy="190" rx="21" ry="10" fill="white" opacity="0.75"/>
+
+  <!-- Cilantro garnish sprigs -->
+  <circle cx="226" cy="182" r="8" fill="#4CAF50"/>
+  <circle cx="240" cy="178" r="7" fill="#66BB6A"/>
+  <circle cx="218" cy="176" r="6" fill="#388E3C"/>
+  <circle cx="570" cy="182" r="8" fill="#4CAF50"/>
+  <circle cx="582" cy="178" r="7" fill="#66BB6A"/>
+  <circle cx="562" cy="176" r="6" fill="#388E3C"/>
+
+  <!-- Sour cream on top -->
+  <path d="M200,185 Q300,170 400,180 Q500,170 600,183" stroke="white" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Red sauce drips over edge of plate -->
+  <path d="M160,290 Q145,310 148,330" stroke="#C62828" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.4"/>
+  <path d="M640,288 Q655,308 652,328" stroke="#C62828" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- Side salad/garnish -->
+  <ellipse cx="400" cy="415" rx="90" ry="32" fill="#81C784" opacity="0.8"/>
+  <ellipse cx="350" cy="412" rx="35" ry="15" fill="#A5D6A7" opacity="0.7"/>
+  <ellipse cx="450" cy="413" rx="32" ry="14" fill="#A5D6A7" opacity="0.6"/>
+  <circle cx="375" cy="408" r="8" fill="#EF5350"/>
+  <circle cx="425" cy="408" r="8" fill="#EF5350"/>
+
+  <text x="400" y="42" text-anchor="middle" font-family="'Poppins',Arial,sans-serif" font-size="26" fill="#FFD600" letter-spacing="4">★★★★★</text>
+  <text x="400" y="72" text-anchor="middle" font-family="'Poppins',Arial,sans-serif" font-size="15" fill="rgba(255,255,255,0.9)" font-weight="700" letter-spacing="1">ENCHILADAS EN SALSA ROJA — OSOYOOS</text>
 </svg>
